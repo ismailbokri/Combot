@@ -58,27 +58,27 @@ This project aims to make information about Tunisian laws related to contract co
   - `texte_code_societes_commerciales`  
 
 ---
+## 📁 Directory Structure :
 
-## 📁 Directory Structure  :
-- structure:
-  - ` /📁 bm25_states` 
-  -` /📁 data` 
-  -` / 📁 evaluation` 
-  -` / 📁 index` 
-  -` / 📁 legal_codes` 
-  -` / 📁 log` 
-  -` / 📁 static` 
-  -` / 📁 css` 
-  -` / 📁 stores` 
-  -` / 📁 templates` 
-  -` / 📄 README.md ` 
-  -` 📄 app.py ` 
-  -` 📄 combot_functions.py ` 
-  -` 📄 config.py ` 
-  -` 📄 contract_functions.py`  
-  -` 📄 db.py ` 
-  -` 📄 webCrawlerAgent.py ` 
-  -` 📄 requirements.txt` 
+/📁 bm25_states  
+/📁 data  
+/📁 evaluation  
+/📁 index  
+/📁 legal_codes  
+/📁 log  
+/📁 static  
+/📁 css  
+/📁 stores  
+/📁 templates  
+📄 README.md  
+📄 app.py  
+📄 combot_functions.py  
+📄 config.py  
+📄 contract_functions.py  
+📄 db.py  
+📄 webCrawlerAgent.py  
+📄 requirements.txt  
+
 
 ## ⚙️ Getting Started  
 
