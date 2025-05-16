@@ -95,10 +95,10 @@ This project aims to make information about Tunisian laws related to contract co
    python app.py
 
 ## 🙏 Acknowledgments
-Special thanks to Esprit School of Engineering for the opportunity to build this project and for providing access to the DGX platform, which allowed us to experiment with fine-tuning LLMs using legal texts.
+Special thanks to **Esprit School of Engineering** for the opportunity to build this project and for providing access to the DGX platform, which allowed us to experiment with fine-tuning LLMs using legal texts.
 
 We are grateful to:
 
-- Mr. Morad Zerrai and Mrs. Nardin Hannfi for their mentorship and guidance throughout the project
+- Mr. **Morad Zerrai** and Mrs. **Nardin Hannfi** for their mentorship and guidance throughout the project
 
-- Mr. Souhail Oueslati, Group Chief Financial Officer, for offering expert legal and financial advice that shaped our work
+- Mr. **Souhail Oueslati**, Group Chief Financial Officer, for offering expert legal and financial advice that shaped our work
