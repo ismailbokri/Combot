@@ -1,0 +1,47 @@
+# Core Python packages
+numpy
+requests
+PyPDF2
+tqdm
+glob2
+
+# Environment management
+python-dotenv
+
+# Logging and date handling
+logging
+python-dateutil
+
+# PDF and image handling
+pdf2image
+werkzeug
+flask
+flask-cors
+
+# HTML parsing
+beautifulsoup4
+
+# NLP and ML packages
+torch
+transformers
+sentence-transformers
+langdetect
+faiss-cpu
+rank-bm25
+paddleocr
+
+# LangChain and extensions
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langgraph
+
+# Vector DB
+qdrant-client
+
+# YAML config
+pyyaml
+
+# Optional dependencies for stability
+urllib3
