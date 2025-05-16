@@ -17,7 +17,7 @@ TF_ENABLE_ONEDNN_OPTS=0
 
 from db import init_db, create_conversation, add_message, get_conversation, get_all_conversations,search_conversations,delete_conversation
 from combot_functions import ChatbotState , understand_query , generate_answer , detect_language , perform_search , generate_title , initialize_data,format_confidence,get_confidence_class,code_summaries,should_rebuild_stores,build_code_stores
-from contrat_functions import State , extract_page ,run_llm_ocr ,run_llm_describer ,should_continue , Get_Source_File , Retrieve_Function , load_or_create_chunks , merge_json_files ,count_total_pages, load_or_create_bm25 , load_contracts ,fulltext_search ,index_data ,BM25Embedder
+from contract_functions import State , extract_page ,run_llm_ocr ,run_llm_describer ,should_continue , Get_Source_File , Retrieve_Function , load_or_create_chunks , merge_json_files ,count_total_pages, load_or_create_bm25 , load_contracts ,fulltext_search ,index_data ,BM25Embedder
 from config import *
 
 
