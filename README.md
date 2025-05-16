@@ -50,7 +50,7 @@ This project aims to make information about Tunisian laws related to contract co
 
 - **Dataset of contracts** (from Esprit University)  
 - **Tunisian legal codes**, including:
-  - `loi_defense_contre_pratiques_deloyales_importation.txt`  
+  - `loi_defense_contre_pratiques_deloyales_importation`  
   - `loi_relative_Startups`  
   - `loi_relative_commerce_exterieur`  
   - `loi_societes_commerce_international`  
@@ -90,12 +90,10 @@ requirements.txt
 3. Start Qdrant using Docker:
    ```bash
    docker run -p 6333:6333 -p 6334:6334 -v "${PWD}/qdrant_storage:/qdrant/storage" qdrant/qdrant
-   
-4.Run the application:
+4. Run the application:  
    ```bash
    python app.py
 
-## ⚙️ Getting Started 
 ## 🙏 Acknowledgments
 Special thanks to Esprit School of Engineering for the opportunity to build this project and for providing access to the DGX platform, which allowed us to experiment with fine-tuning LLMs using legal texts.
 
