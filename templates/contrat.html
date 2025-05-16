@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComBot - Professional Legal Assistant</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Marked for Markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  
+  <!-- Article popup script -->
+  <script src="/js/article_popup.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/contrat.css') }}">
+
+
+</head>
+<body>
+  <nav>
+
+</nav>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="app-logo">
+        <i class="fas fa-scale-balanced"></i>
+        <span>ComBot</span>
+      </div>
+      <ul class="main-nav">
+        <li><a href="/">Legal Assistant</a></li>
+        <li><a href="/contrat">Upload Contrat</a></li>
+        <li><a href="/chat">Chatbot Contrat</a></li>
+        <li><a href="/search-page">Recherche Contrat</a></li>
+        <li><a href="/test-mehdi">Jort Updates</a></li>
+      </ul>
+      <div class="app-header-actions">
+        <button class="btn-icon toggle-sidebar" id="toggle-sidebar">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="app-main">
+        <div class="chat-container">
+            <div class="welcome-screen">
+                <div class="welcome-logo">
+                    <i class="fas fa-file-contract"></i>
+                </div>
+                <h1 class="welcome-title">Analyse de documents PDF</h1>
+                
+                <form method="POST" enctype="multipart/form-data" onsubmit="showLoader()" class="upload-form">
+                    <div class="chat-input-container" style="margin-bottom: 1rem;">
+                        <input type="file" name="file" id="pdfInput" accept=".pdf" required
+                               class="chat-textarea" style="padding: 1rem;">
+                    </div>
+                    
+                    <button type="submit" class="btn-new-chat" id="submitBtn">
+                        <i class="fas fa-magnifying-glass"></i>
+                        Analyser le PDF
+                    </button>
+                </form>
+
+                {% if already_processed %}
+                <div class="toast toast-warning" style="margin-top: 2rem;">
+                    <i class="fas fa-triangle-exclamation"></i>
+                    <div class="toast-content">
+                        <div class="toast-title">Attention</div>
+                        <div class="toast-message">Ce contrat a déjà été traité</div>
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="loading-overlay" id="loadingOverlay">
+                    <div class="loading-spinner"></div>
+                    <p>Traitement du document en cours...</p>
+                </div>
+
+                {% if pdf_text %}
+                <div class="thinking-block" style="margin-top: 2rem; width: 100%;">
+                    <details open>
+                        <summary>Résultats de l'analyse</summary>
+                        <div class="thinking-container">
+                            <div class="thinking-content">
+                                {{ pdf_text }}
+                            </div>
+                        </div>
+                    </details>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </main>
+</div>
+
+<script>
+function showLoader() {
+    document.getElementById('loadingOverlay').style.display = 'flex';
+    document.getElementById('submitBtn').disabled = true;
+}
+
+window.onload = function() {
+    document.getElementById('loadingOverlay').style.display = 'none';
+    document.getElementById('submitBtn').disabled = false;
+};
+</script>

@@ -1,0 +1,268 @@
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComBot - Professional Legal Assistant</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Marked for Markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  
+  <!-- Article popup script -->
+  <script src="/js/article_popup.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/chat_contrat.css') }}">
+
+
+</head>
+<body>
+  <nav>
+
+</nav>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+        <div class="app-logo">
+          <i class="fas fa-scale-balanced"></i>
+          <span>ComBot</span>
+        </div>
+        <ul class="main-nav">
+          <li><a href="/">Legal Assistant</a></li>
+          <li><a href="/contrat">Upload Contrat</a></li>
+          <li><a href="/chat">Chatbot Contrat</a></li>
+          <li><a href="/search-page">Recherche Contrat</a></li>
+          <li><a href="/test-mehdi">Jort Updates</a></li>
+        </ul>
+        <div class="app-header-actions">
+          <button class="btn-icon toggle-sidebar" id="toggle-sidebar">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </header>
+
+<div class="app-container">
+    <!-- Sidebar des contrats -->
+    <div class="app-sidebar contracts-sidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">Contrats disponibles</h2>
+            <div class="sidebar-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Rechercher un contrat...">
+            </div>
+        </div>
+        <div class="conversation-list contracts-list">
+            {% for contract in contracts %}
+            <div class="conversation-item contract-item" 
+                 data-titre="{{ contract.titre }}"
+                 data-date="{{ contract.date }}"
+                 data-contexte="{{ contract.contexte }}"
+                 data-filename="{{ contract.source_fichier }}">
+                <div class="conversation-info">
+                    <div class="conversation-title">
+                        <i class="fas fa-file-contract"></i>
+                        {{ contract.source_fichier }}
+                    </div>
+                    <div class="conversation-meta">
+                        <span class="contract-date">{{ contract.date }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Chat Container -->
+    <div class="app-main">
+        <div class="chat-container">
+            <div class="chat-header" style="padding: var(--space-lg); border-bottom: 1px solid var(--gray-200);">
+                <h1 class="welcome-title" style="margin: 0;">
+                    <i class="fas fa-robot"></i>
+                    Contract Chatbot
+                </h1>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+                <div class="message assistant">
+                    <div class="message-avatar bot-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content-wrapper">
+                        <div class="message-bubble">
+                            Bonjour ! Comment puis-je vous aider aujourd'hui ?
+                        </div>
+                    </div>
+                </div>
+
+                {% if ai_response %}
+                    <div class="message user">
+                        <div class="message-avatar user-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="message-content-wrapper">
+                            <div class="message-bubble">
+                                {{ request.form['user_query'] }}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="message assistant">
+                        <div class="message-avatar bot-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content-wrapper">
+                            <div class="message-bubble">
+                                {{ ai_response | safe }}
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+
+            <form class="chat-form" method="POST" action="/get_response" style="margin-top: auto;">
+                <div class="chat-input-container">
+                    <input type="text" 
+                           name="user_query" 
+                           id="chat-input" 
+                           class="chat-textarea" 
+                           placeholder="Tapez votre message..." 
+                           required
+                           style="border: none; background: transparent; padding: var(--space-md);">
+                    <button type="submit" class="send-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Styles supplémentaires spécifiques à cette page */
+    .contracts-sidebar {
+        border-right: 1px solid var(--gray-200);
+    }
+    
+    .contract-item {
+        cursor: pointer;
+        transition: var(--transition);
+    }
+    
+    .contract-item:hover {
+        background-color: var(--gray-100);
+    }
+    
+    .contract-date {
+        font-size: 0.75rem;
+        color: var(--gray-500);
+    }
+    
+    .metadata-popup {
+        position: fixed;
+        background: var(--gray-100);
+        border: 1px solid var(--primary);
+        border-radius: var(--border-radius);
+        padding: var(--space-md);
+        width: 300px;
+        box-shadow: var(--shadow-lg);
+        opacity: 0;
+        transition: opacity 0.2s ease;
+        pointer-events: none;
+        z-index: 1000;
+    }
+    
+    .metadata-popup.visible {
+        opacity: 1;
+    }
+    
+    .metadata-popup h3 {
+        color: var(--primary);
+        margin-bottom: var(--space-sm);
+        font-size: 1rem;
+    }
+    
+    .metadata-item {
+        margin-bottom: var(--space-sm);
+    }
+    
+    .metadata-item strong {
+        display: block;
+        color: var(--gray-600);
+        font-size: 0.75rem;
+    }
+    
+    .metadata-item span {
+        display: block;
+        color: var(--gray-800);
+        font-size: 0.875rem;
+    }
+</style>
+
+<script>
+    // Fonctionnalité 1: Click sur contrat remplit l'input
+    document.querySelectorAll('.contract-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const filename = item.dataset.filename;
+            const chatInput = document.getElementById('chat-input');
+            chatInput.value = `À propos du contrat "${filename}": `;
+            chatInput.focus();
+        });
+    });
+    
+    // Fonctionnalité 2: Hover + timeout pour metadata
+    let hoverTimeout;
+    const popup = document.createElement('div');
+    popup.className = 'metadata-popup';
+    document.body.appendChild(popup);
+    
+    document.querySelectorAll('.contract-item').forEach(item => {
+        item.addEventListener('mouseenter', (e) => {
+            const rect = e.target.getBoundingClientRect();
+            hoverTimeout = setTimeout(() => {
+                const metadata = {
+                    titre: item.dataset.titre,
+                    date: item.dataset.date,
+                    contexte: item.dataset.contexte
+                };
+                
+                popup.innerHTML = `
+                    <h3>${metadata.titre}</h3>
+                    <div class="metadata-item">
+                        <strong>Date</strong>
+                        <span>${metadata.date || 'Non spécifiée'}</span>
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Contexte</strong>
+                        <span>${metadata.contexte || 'Aucun contexte fourni'}</span>
+                    </div>
+                `;
+                
+                popup.style.left = `${rect.left + rect.width + 20}px`;
+                popup.style.top = `${rect.top}px`;
+                popup.classList.add('visible');
+            }, 500);
+        });
+    
+        item.addEventListener('mouseleave', () => {
+            clearTimeout(hoverTimeout);
+            popup.classList.remove('visible');
+        });
+    });
+    
+    // Déplacement du popup avec le curseur
+    document.addEventListener('mousemove', (e) => {
+        if(popup.classList.contains('visible')) {
+            popup.style.left = `${e.clientX + 20}px`;
+            popup.style.top = `${e.clientY + 10}px`;
+        }
+    });
+</script>
+
+

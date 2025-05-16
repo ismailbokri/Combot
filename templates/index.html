@@ -1,0 +1,861 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComBot - Professional Legal Assistant</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Marked for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <!-- Article popup script -->
+    <script src="/js/article_popup.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header class="app-header">
+        <div class="app-logo">
+          <i class="fas fa-scale-balanced"></i>
+          <span>ComBot</span>
+        </div>
+        <ul class="main-nav">
+          <li><a href="/">Legal Assistant</a></li>
+          <li><a href="/contrat">Upload Contrat</a></li>
+          <li><a href="/chat">Chatbot Contrat</a></li>
+          <li><a href="/search-page">Recherche Contrat</a></li>
+          <li><a href="/test-mehdi">Jort Updates</a></li>
+        </ul>
+        <div class="app-header-actions">
+          <button class="btn-icon toggle-sidebar" id="toggle-sidebar">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </header>
+      
+      <!-- Sidebar -->
+      <aside class="app-sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-title">CONVERSATIONS</div>
+          <button class="btn-new-chat" id="new-chat-btn">
+            <i class="fas fa-plus"></i>
+            New Conversation
+          </button>
+          <div class="sidebar-search">
+            <i class="fas fa-search"></i>
+            <input type="text" id="search-conversations" placeholder="Search conversations...">
+          </div>
+        </div>
+        <div class="conversation-list" id="conversation-list">
+          <!-- Conversation items will be added here -->
+        </div>
+      </aside>
+      <!-- Sidebar overlay for mobile -->
+      <div class="sidebar-overlay" id="sidebar-overlay"></div>
+      <!-- Main content -->
+      <main class="app-main">
+        <div class="chat-container" id="chat-container">
+          <!-- Chat messages will be inserted here -->
+        </div>
+        
+        <div class="chat-input-wrapper">
+          <div class="chat-input-container">
+            <textarea 
+              id="chat-textarea"
+              class="chat-textarea"
+              placeholder="Ask about Tunisian laws and regulations..."
+              rows="1"
+            ></textarea>
+            <button class="send-button" id="send-button">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+    <!-- Toast notification container -->
+    <div class="toast-container" id="toast-container">
+      <!-- Toast notifications will be added here -->
+    </div>
+    
+    <script>
+      // DOM Elements
+      const chatContainer = document.getElementById('chat-container');
+      const chatTextarea = document.getElementById('chat-textarea');
+      const sendButton = document.getElementById('send-button');
+      const toggleSidebar = document.getElementById('toggle-sidebar');
+      const sidebar = document.getElementById('sidebar');
+      const sidebarOverlay = document.getElementById('sidebar-overlay');
+      const newChatBtn = document.getElementById('new-chat-btn');
+      const conversationList = document.getElementById('conversation-list');
+      const searchInput = document.getElementById('search-conversations');
+      const toastContainer = document.getElementById('toast-container');
+      
+      // Global variables
+      let currentConversationId = null;
+      let thinkingMessage = null;
+      
+      // Initialize welcome screen
+      function showWelcomeScreen() {
+        chatContainer.innerHTML = `
+          <div class="welcome-screen">
+            <div class="welcome-logo">
+              <i class="fas fa-scale-balanced"></i>
+            </div>
+            <h1 class="welcome-title">Welcome to ComBot</h1>
+            <p class="welcome-subtitle">Your AI-powered legal assistant specializing in Tunisian law. Ask any legal question, and I'll provide accurate information based on the latest legal texts and regulations.</p>
+            
+            <div class="suggestion-grid">
+              <div class="suggestion-card" data-query="What are the requirements for starting a business in Tunisia?">
+                <i class="fas fa-building"></i>
+                <h3>Business Formation</h3>
+                <p>Learn about legal requirements for establishing a business entity in Tunisia.</p>
+              </div>
+              
+              <div class="suggestion-card" data-query="Explain the taxation system for corporations in Tunisia">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <h3>Corporate Taxation</h3>
+                <p>Understand the tax obligations and incentives for companies operating in Tunisia.</p>
+              </div>
+              
+              <div class="suggestion-card" data-query="What are my rights as an employee under Tunisian labor law?">
+                <i class="fas fa-user-tie"></i>
+                <h3>Employment Rights</h3>
+                <p>Discover the legal protections and benefits available to workers in Tunisia.</p>
+              </div>
+              
+              <div class="suggestion-card" data-query="How does inheritance law work in Tunisia?">
+                <i class="fas fa-scroll"></i>
+                <h3>Inheritance Law</h3>
+                <p>Explore the legal framework governing inheritance and succession in Tunisia.</p>
+              </div>
+            </div>
+          </div>
+        `;
+        
+        // Add event listeners to suggestion cards
+        document.querySelectorAll('.suggestion-card').forEach(card => {
+          card.addEventListener('click', () => {
+            const query = card.getAttribute('data-query');
+            if (query) {
+              chatTextarea.value = query;
+              sendMessage();
+            }
+          });
+        });
+      }
+      
+      // Initialize app
+      function initApp() {
+        showWelcomeScreen();
+        loadConversations();
+        
+        // Setup event listeners
+        chatTextarea.addEventListener('keypress', (e) => {
+          if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            sendMessage();
+          }
+        });
+        
+        chatTextarea.addEventListener('input', () => {
+          chatTextarea.style.height = 'auto';
+          chatTextarea.style.height = Math.min(chatTextarea.scrollHeight, 150) + 'px';
+        });
+        
+        sendButton.addEventListener('click', sendMessage);
+        
+        toggleSidebar.addEventListener('click', () => {
+          sidebar.classList.toggle('show');
+          sidebarOverlay.classList.toggle('show');
+        });
+        
+        sidebarOverlay.addEventListener('click', () => {
+          sidebar.classList.remove('show');
+          sidebarOverlay.classList.remove('show');
+        });
+        
+        newChatBtn.addEventListener('click', () => {
+          currentConversationId = null;
+          showWelcomeScreen();
+          
+          // Update active conversation
+          document.querySelectorAll('.conversation-item').forEach(item => {
+            item.classList.remove('active');
+          });
+          
+          // Close sidebar on mobile
+          if (window.innerWidth < 992) {
+            sidebar.classList.remove('show');
+            sidebarOverlay.classList.remove('show');
+          }
+        });
+        
+        searchInput.addEventListener('input', debounce(searchConversations, 300));
+      }
+      
+      // Send message
+      async function sendMessage() {
+        const message = chatTextarea.value.trim();
+        if (!message) return;
+        
+        // Add user message
+        addMessage(message, 'user');
+        
+        // Clear textarea and reset height
+        chatTextarea.value = '';
+        chatTextarea.style.height = 'auto';
+        
+        // Show thinking indicator
+        showThinking();
+        
+        try {
+          // Prepare request payload
+          const payload = { query: message };
+          if (currentConversationId) {
+            payload.conversation_id = currentConversationId;
+          }
+          
+          // Send request to backend
+          const response = await fetch('/ask', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+          });
+          
+          // Hide thinking indicator
+          hideThinking();
+          
+          if (!response.ok) {
+            throw new Error(`Server error: ${response.status}`);
+          }
+          
+          const data = await response.json();
+          
+          if (data.error) {
+            throw new Error(data.error);
+          }
+          
+          // If new conversation created
+          if (data.title && !currentConversationId) {
+            currentConversationId = data.conversation_id;
+            addConversationToList(data.conversation_id, data.title, message);
+            
+            // Update active conversation
+            document.querySelectorAll('.conversation-item').forEach(item => {
+              item.classList.remove('active');
+              if (item.dataset.id == data.conversation_id) {
+                item.classList.add('active');
+              }
+            });
+          }
+          
+          // Add assistant's response
+          addMessage(data.assistant_html, 'assistant');
+          
+          // Log metrics if available
+          if (data.metrics) {
+            console.log('Processing metrics:', data.metrics);
+          }
+          
+        } catch (error) {
+          console.error('Error sending message:', error);
+          hideThinking();
+          
+          // Add error message
+          addMessage(`
+            <div style="color: var(--error); display: flex; align-items: center; gap: 8px;">
+              <i class="fas fa-exclamation-triangle"></i>
+              <span>Error: ${error.message || 'Failed to communicate with the server'}</span>
+            </div>
+          `, 'assistant');
+          
+          // Show error toast
+          showToast('Error', 'Failed to process your request', 'error');
+        }
+      }
+      
+      // Add message to chat
+   // Add message to chat
+  function addMessage(content, sender) {
+    // Clear welcome screen if it exists
+    const welcomeScreen = document.querySelector('.welcome-screen');
+    if (welcomeScreen) {
+      chatContainer.innerHTML = '';
+    }
+    
+    // Create message elements
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `message ${sender}`;
+    
+    const avatarDiv = document.createElement('div');
+    avatarDiv.className = `message-avatar ${sender === 'user' ? 'user-avatar' : 'bot-avatar'}`;
+    avatarDiv.innerHTML = sender === 'user' ? '<i class="fas fa-user"></i>' : '<i class="fas fa-robot"></i>';
+    
+    const contentWrapper = document.createElement('div');
+    contentWrapper.className = 'message-content-wrapper';
+    
+    const headerDiv = document.createElement('div');
+    headerDiv.className = 'message-header';
+    
+    const authorSpan = document.createElement('span');
+    authorSpan.className = 'message-author';
+    authorSpan.textContent = sender === 'user' ? 'You' : 'ComBot';
+    
+    const timeSpan = document.createElement('span');
+    timeSpan.className = 'message-time';
+    timeSpan.textContent = new Date().toLocaleTimeString([], {
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+    
+    headerDiv.appendChild(authorSpan);
+    headerDiv.appendChild(timeSpan);
+    
+    const bubbleDiv = document.createElement('div');
+    bubbleDiv.className = 'message-bubble';
+    
+    // Set content based on sender
+    if (sender === 'user') {
+      bubbleDiv.innerHTML = marked.parse(content);
+    } else {
+      // For assistant responses, identify if this is the HTML from the server
+      if (content.includes('class="final-answer"')) {
+        // This is an HTML response from the server - extract and improve the final answer part
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = content;
+        
+        // Find the final answer element
+        const finalAnswer = tempDiv.querySelector('.final-answer');
+        if (finalAnswer) {
+          // Format the text content inside final-answer
+          const rawText = finalAnswer.textContent;
+          finalAnswer.innerHTML = formatLegalResponse(rawText);
+        }
+        
+        // Use the modified HTML
+        bubbleDiv.innerHTML = tempDiv.innerHTML;
+      } else {
+        // Plain text response - format directly
+        bubbleDiv.innerHTML = formatLegalResponse(content);
+      }
+    }
+    
+    // Assemble message
+    contentWrapper.appendChild(headerDiv);
+    contentWrapper.appendChild(bubbleDiv);
+    
+    messageDiv.appendChild(avatarDiv);
+    messageDiv.appendChild(contentWrapper);
+    
+    // Add to chat container
+    chatContainer.appendChild(messageDiv);
+    
+    // Scroll to bottom
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+    
+    return messageDiv;
+  }
+      // Show thinking indicator
+      function showThinking() {
+        if (thinkingMessage) return;
+        
+        // Clear welcome screen if it exists
+        const welcomeScreen = document.querySelector('.welcome-screen');
+        if (welcomeScreen) {
+          chatContainer.innerHTML = '';
+        }
+        
+        thinkingMessage = document.createElement('div');
+        thinkingMessage.className = 'message assistant';
+        
+        const avatarDiv = document.createElement('div');
+        avatarDiv.className = 'message-avatar bot-avatar';
+        avatarDiv.innerHTML = '<i class="fas fa-robot"></i>';
+        
+        const contentWrapper = document.createElement('div');
+        contentWrapper.className = 'message-content-wrapper';
+        
+        const headerDiv = document.createElement('div');
+        headerDiv.className = 'message-header';
+        
+        const authorSpan = document.createElement('span');
+        authorSpan.className = 'message-author';
+        authorSpan.textContent = 'ComBot';
+        
+        const timeSpan = document.createElement('span');
+        timeSpan.className = 'message-time';
+        timeSpan.textContent = new Date().toLocaleTimeString([], {
+          hour: '2-digit',
+          minute: '2-digit'
+        });
+        
+        headerDiv.appendChild(authorSpan);
+        headerDiv.appendChild(timeSpan);
+        
+        const bubbleDiv = document.createElement('div');
+        bubbleDiv.className = 'message-bubble';
+        
+        const typingIndicator = document.createElement('div');
+        typingIndicator.className = 'typing-indicator';
+        typingIndicator.innerHTML = `
+          
+          <div class="dots">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        `;
+        
+        bubbleDiv.appendChild(typingIndicator);
+        contentWrapper.appendChild(headerDiv);
+        contentWrapper.appendChild(bubbleDiv);
+        
+        thinkingMessage.appendChild(avatarDiv);
+        thinkingMessage.appendChild(contentWrapper);
+        
+        chatContainer.appendChild(thinkingMessage);
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+      }
+      
+      // Hide thinking indicator
+      function hideThinking() {
+        if (thinkingMessage) {
+          chatContainer.removeChild(thinkingMessage);
+          thinkingMessage = null;
+        }
+      }
+      
+      // Load conversations from API
+      async function loadConversations() {
+        try {
+          const response = await fetch('/get_conversations');
+          
+          if (!response.ok) {
+            throw new Error('Failed to load conversations');
+          }
+          
+          const conversations = await response.json();
+          
+          // Clear current list
+          conversationList.innerHTML = '';
+          
+          if (conversations.length === 0) {
+            // Show empty state
+            conversationList.innerHTML = `
+              <div style="text-align: center; padding: 2rem 1rem;">
+                <i class="fas fa-comments" style="font-size: 2rem; color: var(--gray-300); margin-bottom: 1rem;"></i>
+                <p style="color: var(--gray-500);">No conversations yet</p>
+              </div>
+            `;
+          } else {
+            // Add conversations to list
+            conversations.forEach(conv => {
+              addConversationToList(conv.id, conv.title);
+            });
+          }
+        } catch (error) {
+          console.error('Error loading conversations:', error);
+          showToast('Error', 'Failed to load conversations', 'error');
+        }
+      }
+      
+      // Add conversation to sidebar list
+      function addConversationToList(id, title, preview = '') {
+        const item = document.createElement('div');
+        item.className = 'conversation-item';
+        item.dataset.id = id;
+        
+        if (currentConversationId === id) {
+          item.classList.add('active');
+        }
+        
+        item.innerHTML = `
+          <div class="conversation-info">
+            <div class="conversation-title">${title}</div>
+            <div class="conversation-meta">${formatDate(new Date())}</div>
+          </div>
+          <div class="conversation-actions">
+            <button class="action-btn action-delete" title="Delete conversation">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+        `;
+        
+        // Add click event to load conversation
+        item.addEventListener('click', () => {
+          loadConversation(id);
+        });
+        
+        // Add click event to delete button
+        const deleteBtn = item.querySelector('.action-delete');
+        deleteBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          deleteConversation(id);
+        });
+        
+        conversationList.appendChild(item);
+      }
+      
+      // Load conversation by ID
+      async function loadConversation(id) {
+        try {
+          const response = await fetch(`/get_conversation/${id}`);
+          
+          if (!response.ok) {
+            throw new Error('Failed to load conversation');
+          }
+          
+          const data = await response.json();
+          
+          if (data.error) {
+            throw new Error(data.error);
+          }
+          
+          // Update current conversation ID
+          currentConversationId = id;
+          
+          // Clear chat container
+          chatContainer.innerHTML = '';
+          
+          // Add messages to chat
+          data.messages.forEach(msg => {
+            addMessage(msg.content, msg.role);
+          });
+          
+          // Update active state in sidebar
+          document.querySelectorAll('.conversation-item').forEach(item => {
+            item.classList.remove('active');
+            if (item.dataset.id == id) {
+              item.classList.add('active');
+            }
+          });
+          
+          // Close sidebar on mobile
+          if (window.innerWidth < 992) {
+            sidebar.classList.remove('show');
+            sidebarOverlay.classList.remove('show');
+          }
+          
+        } catch (error) {
+          console.error('Error loading conversation:', error);
+          showToast('Error', 'Failed to load conversation', 'error');
+        }
+      }
+      
+      // Delete conversation
+      async function deleteConversation(id) {
+        // Confirm deletion
+        if (!confirm('Are you sure you want to delete this conversation?')) {
+          return;
+        }
+        
+        try {
+          const response = await fetch(`/delete_conversation/${id}`, {
+            method: 'DELETE'
+          });
+          
+          if (!response.ok) {
+            throw new Error('Failed to delete conversation');
+          }
+          
+          // Remove from UI
+          const item = document.querySelector(`.conversation-item[data-id="${id}"]`);
+          if (item) {
+            item.remove();
+          }
+          
+          // If it was the current conversation, show welcome screen
+          if (currentConversationId === id) {
+            currentConversationId = null;
+            showWelcomeScreen();
+          }
+          
+          showToast('Success', 'Conversation deleted', 'success');
+          
+        } catch (error) {
+          console.error('Error deleting conversation:', error);
+          showToast('Error', 'Failed to delete conversation', 'error');
+        }
+      }
+      
+      // Search conversations
+      async function searchConversations() {
+        const query = searchInput.value.trim();
+        
+        try {
+          const response = await fetch('/search_conversations', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ query })
+          });
+          
+          if (!response.ok) {
+            throw new Error('Search failed');
+          }
+          
+          const results = await response.json();
+          
+          // Clear current list
+          conversationList.innerHTML = '';
+          
+          if (results.length === 0) {
+            // Show empty search state
+            conversationList.innerHTML = `
+              <div style="text-align: center; padding: 2rem 1rem;">
+                <i class="fas fa-search" style="font-size: 2rem; color: var(--gray-300); margin-bottom: 1rem;"></i>
+                <p style="color: var(--gray-500);">No results found</p>
+              </div>
+            `;
+          } else {
+            // Add results to list
+            results.forEach(conv => {
+              addConversationToList(conv.id, conv.title);
+            });
+          }
+        } catch (error) {
+          console.error('Error searching conversations:', error);
+        }
+      }
+      
+      // Show toast notification
+      function showToast(title, message, type = 'info') {
+        const toast = document.createElement('div');
+        toast.className = `toast toast-${type}`;
+        
+        toast.innerHTML = `
+          <i class="fas fa-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'}"></i>
+          <div class="toast-content">
+            <div class="toast-title">${title}</div>
+            <div class="toast-message">${message}</div>
+          </div>
+          <button class="toast-close">
+            <i class="fas fa-times"></i>
+          </button>
+        `;
+        
+        // Add close event
+        const closeBtn = toast.querySelector('.toast-close');
+        closeBtn.addEventListener('click', () => {
+          toastContainer.removeChild(toast);
+        });
+        
+        // Auto-remove after 3 seconds
+        setTimeout(() => {
+          if (toastContainer.contains(toast)) {
+            toastContainer.removeChild(toast);
+          }
+        }, 3000);
+        
+        toastContainer.appendChild(toast);
+      }
+      
+      // Utility: Format date
+      function formatDate(date) {
+        const now = new Date();
+        const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+        const yesterday = new Date(today);
+        yesterday.setDate(yesterday.getDate() - 1);
+        
+        if (date.toDateString() === now.toDateString()) {
+          return 'Today';
+        } else if (date.toDateString() === yesterday.toDateString()) {
+          return 'Yesterday';
+        } else {
+          return date.toLocaleDateString();
+        }
+      }
+      
+      // Utility: Debounce function
+      function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+      }
+      
+      // Initialize app on load
+      document.addEventListener('DOMContentLoaded', initApp);
+      /**
+   * Formats legal response text from markdown-style formatting to proper HTML formatting
+   * @param {string} text - The raw text from the API with markdown-style formatting
+   * @return {string} - Properly formatted HTML
+   */
+  function formatLegalResponse(text) {
+    // First, detect the structure and determine if it has numbered sections
+    const hasNumberedSections = /\d+\.\s+\*\*[^*]+\*\*/i.test(text);
+    
+    if (hasNumberedSections) {
+      // Handle numbered sections (like the example provided)
+      
+      // Split the text into sections by looking for numbered patterns like "1. **Title**"
+      const sections = text.split(/(?=\d+\.\s+\*\*)/);
+      
+      // Initialize the HTML structure
+      let formattedHTML = '<div class="legal-response">';
+      
+      // Process each section
+      sections.forEach(section => {
+        // Skip empty sections
+        if (!section.trim()) return;
+        
+        // Extract the section number and title
+        const titleMatch = section.match(/^(\d+)\.\s+\*\*([^*]+)\*\*/);
+        
+        if (titleMatch) {
+          const sectionNumber = titleMatch[1];
+          const sectionTitle = titleMatch[2];
+          
+          // Start the section
+          formattedHTML += `<div class="legal-section">`;
+          formattedHTML += `<h3 class="section-title"><span class="section-number">${sectionNumber}.</span> ${sectionTitle}</h3>`;
+          
+          // Get the content after the title
+          let sectionContent = section.substring(titleMatch[0].length).trim();
+          
+          // Process bullet points if they exist
+          if (sectionContent.includes('- **')) {
+            const bulletPoints = sectionContent.split(/(?=-\s+\*\*)/);
+            
+            formattedHTML += '<ul class="legal-list">';
+            
+            bulletPoints.forEach(bullet => {
+              // Skip empty bullets
+              if (!bullet.trim()) return;
+              
+              // Extract bullet title and content
+              const bulletMatch = bullet.match(/-\s+\*\*([^*]+)\*\*\s*:\s*(.*)/s);
+              
+              if (bulletMatch) {
+                const bulletTitle = bulletMatch[1];
+                const bulletContent = bulletMatch[2].trim();
+                
+                formattedHTML += `<li class="legal-item">
+                  <strong class="item-title">${bulletTitle}:</strong> ${bulletContent}
+                </li>`;
+              } else {
+                // Handle bullet without title
+                const simpleBulletMatch = bullet.match(/-\s+(.*)/s);
+                if (simpleBulletMatch) {
+                  formattedHTML += `<li class="legal-item">${simpleBulletMatch[1].trim()}</li>`;
+                }
+              }
+            });
+            
+            formattedHTML += '</ul>';
+          } else {
+            // Regular paragraph content
+            formattedHTML += `<p class="section-content">${sectionContent}</p>`;
+          }
+          
+          formattedHTML += '</div>'; // Close section
+        } else {
+          // Handle text that doesn't match the pattern
+          formattedHTML += `<p class="legal-text">${section}</p>`;
+        }
+      });
+      
+      formattedHTML += '</div>'; // Close legal-response
+      return formattedHTML;
+    } else {
+      // Handle general text without numbered sections
+      
+      // Replace bold text (** **)
+      let formattedText = text.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+      
+      // Replace bullet points
+      formattedText = formattedText.replace(/^-\s+(.*)$/gm, '<li>$1</li>');
+      
+      // Wrap lists in <ul> tags
+      if (formattedText.includes('<li>')) {
+        formattedText = formattedText.replace(/<li>([^<]+)<\/li>/g, function(match) {
+          return `<ul class="legal-list">${match}</ul>`;
+        });
+      }
+      
+      // Wrap paragraphs
+      formattedText = formattedText.replace(/^(?!<[uo]l|<li|<h\d|<div|<p)(.+)$/gm, '<p class="legal-text">$1</p>');
+      
+      return `<div class="legal-response">${formattedText}</div>`;
+    }
+  }
+  
+  // CSS to be included in your application
+  const legalResponseCSS = `
+  .legal-response {
+    font-family: var(--font-family, 'Montserrat', sans-serif);
+    color: var(--text-primary, #1e1e1e);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .legal-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--primary, #1a365d);
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .section-number {
+    font-weight: 700;
+    margin-right: 0.5rem;
+  }
+  
+  .legal-list {
+    list-style-type: none;
+    padding-left: 1.5rem;
+    margin: 0.75rem 0;
+  }
+  
+  .legal-item {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1rem;
+  }
+  
+  .legal-item:before {
+    content: "•";
+    position: absolute;
+    left: -0.75rem;
+    color: var(--secondary, #b99f65);
+  }
+  
+  .item-title {
+    font-weight: 600;
+    color: var(--primary, #1a365d);
+  }
+  
+  .section-content,
+  .legal-text {
+    margin-bottom: 0.75rem;
+    font-size: 0.9375rem;
+  }
+  `;
+  // When receiving a response from the backend
+  const formattedHTML = formatLegalResponse(data.final_answer_fr);
+  document.querySelector('.final-answer').innerHTML = formattedHTML; 
+  </script>
+  </body>
+  </html>

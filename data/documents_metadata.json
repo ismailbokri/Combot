@@ -1,0 +1,117 @@
+[
+    {
+        "titre": "Contrat de location d'un bâtiment d'enseignement",
+        "date": "21/02/2014",
+        "contexte": "Location d'un bâtiment d'enseignement à Tunis",
+        "resume": "Le contrat de location concerne un bâtiment d'enseignement à la Zone industrielle Chotrana pour une période de 15 ans. Le locataire est la société Zohra et le bailleur est l'Ecole Supérieure Privée d'Ingénierie et de Technologies.",
+        "entites_cles": [
+            "Ecole Supérieure Privée d'Ingénierie et de Technologies",
+            "Zohra"
+        ],
+        "type_document": "Contrat de location",
+        "source_fichier": "contrat_de_location_21.02.2014.pdf",
+        "date_analyse": "2025-04-30 22:32:26",
+        "pages_analysees": 3
+    },
+    {
+        "titre": "Contrat d'enseignant vacataire",
+        "date": "22/01/2018",
+        "contexte": "Contrat de vacataire pour dispenser un enseignement à l'ESPRIT",
+        "resume": "Ce contrat formalise la collaboration entre l'Ecole Supérieure Privée d'Ingéniérie et de Technologies ESPRIT et LAROUSSI KHALIL pour dispenser des cours...",
+        "entites_cles": [
+            "Ecole Supérieure Privée d'Ingéniérie et de Technologies ESPRIT",
+            "LAROUSSI KHALIL"
+        ],
+        "type_document": "Contrat vacataire",
+        "source_fichier": "contrat_vacataire_esprit.pdf",
+        "date_analyse": "2025-04-29 10:14:12",
+        "pages_analysees": 2
+    },
+    {
+        "titre": "Convention cadre de partenariat entre BOUDRANT et ESPRIT",
+        "date": "30/03/2017",
+        "contexte": "Partenariat entre une société de commerce et une école d'ingénieur",
+        "resume": "Ce document établit un partenariat entre BOUDRANT, une société de commerce, et ESPRIT, une école d'ingénieur, pour développer des coopérations dans les domaines de la transmission mécanique, de la formation continue, de la certification et du développement de projets",
+        "entites_cles": [
+            "BOUDRANT",
+            "ESPRIT"
+        ],
+        "type_document": "Contrat partenariat académique",
+        "source_fichier": "Convention_ESPRIT-Boudrant.pdf",
+        "date_analyse": "2025-05-05 22:27:22",
+        "pages_analysees": 4
+    },
+    {
+        "titre": "Contrat de consultant",
+        "date": "non spécifié",
+        "contexte": "Collaboration entre un consultant et une école d'ingénierie",
+        "resume": "Ce document formalise un contrat de consultant entre M. Mehdi Akrouch et l'Ecole Supérieure Privée d'Ingénierie et de Technologies pour des missions de direction des stages et des relations avec les entreprises.",
+        "entites_cles": [
+            "M. Mehdi Akrouch",
+            "Ecole Supérieure Privée d'Ingénierie et de Technologies"
+        ],
+        "type_document": "Contrat vacataire",
+        "source_fichier": "Convention_ESPRIT-MEHDI_AKROUT-2.pdf",
+        "date_analyse": "2025-05-06 10:26:18",
+        "pages_analysees": 2
+    },
+    {
+        "titre": "Entente-cadre d'intérêt de partenariat et de confidentialité",
+        "date": "Non spécifiée",
+        "contexte": "Partenariat entre établissements d'enseignement supérieur pour la coopération en éducation, recherche et développement",
+        "resume": "Ce document établit un partenariat entre le CÉGEP de La Pocatière et ESPRIT pour coopérer dans les domaines de l'éducation, de la recherche et du développement, notamment pour la reconnaissance mutuelle de programmes de formation et la mobilité étudiante.",
+        "entites_cles": [
+            "CÉGEP de La Pocatière",
+            "ESPRIT",
+            "SOLIDEVE International"
+        ],
+        "type_document": "Contrat partenariat académique",
+        "source_fichier": "Copie_de_Convention_ESPRIT-CEGEP_DE_LA_POCATIERE_corporation.pdf",
+        "date_analyse": "2025-04-26 17:28:25",
+        "pages_analysees": 9
+    },
+    {
+        "titre": "Convention de partenariat entre ESPRIT et DT-MODE",
+        "date": "02/08/2011",
+        "contexte": "Partenariat entre une école d'ingénierie et une société pour la fabrication d'un prototype de distributeur automatique",
+        "resume": "La présente convention définit les modalités d'un partenariat entre l'école ESPRIT et la société DT-MODE pour la fabrication d'un prototype de distributeur automatique multi-services.",
+        "entites_cles": [
+            "ESPRIT",
+            "DT-MODE"
+        ],
+        "type_document": "Contrat partenariat académique",
+        "source_fichier": "Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf",
+        "date_analyse": "2025-05-06 11:54:45",
+        "pages_analysees": 2
+    },
+    {
+        "titre": "Avenant à l'accord-cadre de coopération universitaire",
+        "date": "15/11/2010",
+        "contexte": "Coopération entre établissements d'enseignement supérieur en Tunisie et en France",
+        "resume": "Ce document formalise un partenariat entre l'Université Nice Sophia-Antipolis et l'Ecole Supérieure Privée d'Ingénierie et de Technologies (Esprit) pour une coopération dans la formation d'ingénieur et le master en informatique.",
+        "entites_cles": [
+            "Université Nice Sophia-Antipolis",
+            "Ecole Supérieure Privée d'Ingénierie et de Technologies (Esprit)",
+            "Albert Marouani",
+            "Tahar Ben Lakhdar"
+        ],
+        "type_document": "Contrat partenariat académique",
+        "source_fichier": "Copie_de_Convention_ESPRIT-Universite_Nice_Sophia_Antipolis-Avenant.pdf",
+        "date_analyse": "2025-04-09 18:10:06",
+        "pages_analysees": 3
+    },
+    {
+        "titre": "Protocole d'évaluation pour l'attribution du label EUR-ACE Master",
+        "date": "02/05/2017",
+        "contexte": "Évaluation de diplômes d'ingénieur pour l'attribution du label EUR-ACE Master",
+        "resume": "Ce protocole formalise l'évaluation des diplômes d'ingénieur de l'Ecole supérieure privée d'Ingénierie et de Technologies pour l'attribution du label EUR-ACE Master par la Commission des Titres d'Ingénieur",
+        "entites_cles": [
+          "Commission des Titres d'Ingénieur",
+          "Ecole supérieure privée d'Ingénierie et de Technologies"
+        ],
+        "type_document": "Contrat partenariat académique",
+        "source_fichier": "Copie_de_Convention_ESPRIT-CTI.pdf",
+        "date_analyse": "2025-05-12 10:53:36",
+        "pages_analysees": 3
+      }
+]

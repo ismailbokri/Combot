@@ -1,0 +1,1547 @@
+2025-04-09 23:44:32,050 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-09 23:44:32,094 - INFO - Use pytorch device_name: cuda
+2025-04-09 23:44:32,094 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-09 23:44:38,722 - INFO - Rebuilding indexes due to updated data...
+2025-04-09 23:44:42,002 - INFO - Parsed 1460 legal document chunks
+2025-04-09 23:44:42,002 - INFO - Processing batch 1/183: chunks 0 to 7
+2025-04-09 23:44:43,663 - INFO - Processing batch 2/183: chunks 8 to 15
+2025-04-09 23:44:43,789 - INFO - Processing batch 3/183: chunks 16 to 23
+2025-04-09 23:44:43,880 - INFO - Processing batch 4/183: chunks 24 to 31
+2025-04-09 23:44:43,930 - INFO - Processing batch 5/183: chunks 32 to 39
+2025-04-09 23:44:43,954 - INFO - Processing batch 6/183: chunks 40 to 47
+2025-04-09 23:44:43,986 - INFO - Processing batch 7/183: chunks 48 to 55
+2025-04-09 23:44:44,009 - INFO - Processing batch 8/183: chunks 56 to 63
+2025-04-09 23:44:44,030 - INFO - Processing batch 9/183: chunks 64 to 71
+2025-04-09 23:44:44,054 - INFO - Processing batch 10/183: chunks 72 to 79
+2025-04-09 23:44:44,077 - INFO - Processing batch 11/183: chunks 80 to 87
+2025-04-09 23:44:44,103 - INFO - Processing batch 12/183: chunks 88 to 95
+2025-04-09 23:44:44,127 - INFO - Processing batch 13/183: chunks 96 to 103
+2025-04-09 23:44:44,151 - INFO - Processing batch 14/183: chunks 104 to 111
+2025-04-09 23:44:44,172 - INFO - Processing batch 15/183: chunks 112 to 119
+2025-04-09 23:44:44,194 - INFO - Processing batch 16/183: chunks 120 to 127
+2025-04-09 23:44:44,213 - INFO - Processing batch 17/183: chunks 128 to 135
+2025-04-09 23:44:44,234 - INFO - Processing batch 18/183: chunks 136 to 143
+2025-04-09 23:44:44,256 - INFO - Processing batch 19/183: chunks 144 to 151
+2025-04-09 23:44:44,274 - INFO - Processing batch 20/183: chunks 152 to 159
+2025-04-09 23:44:44,294 - INFO - Processing batch 21/183: chunks 160 to 167
+2025-04-09 23:44:44,314 - INFO - Processing batch 22/183: chunks 168 to 175
+2025-04-09 23:44:44,334 - INFO - Processing batch 23/183: chunks 176 to 183
+2025-04-09 23:44:44,355 - INFO - Processing batch 24/183: chunks 184 to 191
+2025-04-09 23:44:44,373 - INFO - Processing batch 25/183: chunks 192 to 199
+2025-04-09 23:44:44,395 - INFO - Processing batch 26/183: chunks 200 to 207
+2025-04-09 23:44:44,415 - INFO - Processing batch 27/183: chunks 208 to 215
+2025-04-09 23:44:44,437 - INFO - Processing batch 28/183: chunks 216 to 223
+2025-04-09 23:44:44,458 - INFO - Processing batch 29/183: chunks 224 to 231
+2025-04-09 23:44:44,480 - INFO - Processing batch 30/183: chunks 232 to 239
+2025-04-09 23:44:44,500 - INFO - Processing batch 31/183: chunks 240 to 247
+2025-04-09 23:44:44,521 - INFO - Processing batch 32/183: chunks 248 to 255
+2025-04-09 23:44:44,542 - INFO - Processing batch 33/183: chunks 256 to 263
+2025-04-09 23:44:44,562 - INFO - Processing batch 34/183: chunks 264 to 271
+2025-04-09 23:44:44,584 - INFO - Processing batch 35/183: chunks 272 to 279
+2025-04-09 23:44:44,604 - INFO - Processing batch 36/183: chunks 280 to 287
+2025-04-09 23:44:44,626 - INFO - Processing batch 37/183: chunks 288 to 295
+2025-04-09 23:44:44,647 - INFO - Processing batch 38/183: chunks 296 to 303
+2025-04-09 23:44:44,668 - INFO - Processing batch 39/183: chunks 304 to 311
+2025-04-09 23:44:44,689 - INFO - Processing batch 40/183: chunks 312 to 319
+2025-04-09 23:44:44,709 - INFO - Processing batch 41/183: chunks 320 to 327
+2025-04-09 23:44:44,730 - INFO - Processing batch 42/183: chunks 328 to 335
+2025-04-09 23:44:44,751 - INFO - Processing batch 43/183: chunks 336 to 343
+2025-04-09 23:44:44,772 - INFO - Processing batch 44/183: chunks 344 to 351
+2025-04-09 23:44:44,792 - INFO - Processing batch 45/183: chunks 352 to 359
+2025-04-09 23:44:44,814 - INFO - Processing batch 46/183: chunks 360 to 367
+2025-04-09 23:44:44,835 - INFO - Processing batch 47/183: chunks 368 to 375
+2025-04-09 23:44:44,855 - INFO - Processing batch 48/183: chunks 376 to 383
+2025-04-09 23:44:44,876 - INFO - Processing batch 49/183: chunks 384 to 391
+2025-04-09 23:44:44,894 - INFO - Processing batch 50/183: chunks 392 to 399
+2025-04-09 23:44:44,915 - INFO - Processing batch 51/183: chunks 400 to 407
+2025-04-09 23:44:44,931 - INFO - Processing batch 52/183: chunks 408 to 415
+2025-04-09 23:44:44,952 - INFO - Processing batch 53/183: chunks 416 to 423
+2025-04-09 23:44:44,975 - INFO - Processing batch 54/183: chunks 424 to 431
+2025-04-09 23:44:44,995 - INFO - Processing batch 55/183: chunks 432 to 439
+2025-04-09 23:44:45,015 - INFO - Processing batch 56/183: chunks 440 to 447
+2025-04-09 23:44:45,033 - INFO - Processing batch 57/183: chunks 448 to 455
+2025-04-09 23:44:45,054 - INFO - Processing batch 58/183: chunks 456 to 463
+2025-04-09 23:44:45,074 - INFO - Processing batch 59/183: chunks 464 to 471
+2025-04-09 23:44:45,095 - INFO - Processing batch 60/183: chunks 472 to 479
+2025-04-09 23:44:45,116 - INFO - Processing batch 61/183: chunks 480 to 487
+2025-04-09 23:44:45,137 - INFO - Processing batch 62/183: chunks 488 to 495
+2025-04-09 23:44:45,158 - INFO - Processing batch 63/183: chunks 496 to 503
+2025-04-09 23:44:45,180 - INFO - Processing batch 64/183: chunks 504 to 511
+2025-04-09 23:44:45,201 - INFO - Processing batch 65/183: chunks 512 to 519
+2025-04-09 23:44:45,222 - INFO - Processing batch 66/183: chunks 520 to 527
+2025-04-09 23:44:45,242 - INFO - Processing batch 67/183: chunks 528 to 535
+2025-04-09 23:44:45,262 - INFO - Processing batch 68/183: chunks 536 to 543
+2025-04-09 23:44:45,282 - INFO - Processing batch 69/183: chunks 544 to 551
+2025-04-09 23:44:45,304 - INFO - Processing batch 70/183: chunks 552 to 559
+2025-04-09 23:44:45,319 - INFO - Processing batch 71/183: chunks 560 to 567
+2025-04-09 23:44:45,333 - INFO - Processing batch 72/183: chunks 568 to 575
+2025-04-09 23:44:45,347 - INFO - Processing batch 73/183: chunks 576 to 583
+2025-04-09 23:44:45,361 - INFO - Processing batch 74/183: chunks 584 to 591
+2025-04-09 23:44:45,381 - INFO - Processing batch 75/183: chunks 592 to 599
+2025-04-09 23:44:45,401 - INFO - Processing batch 76/183: chunks 600 to 607
+2025-04-09 23:44:45,422 - INFO - Processing batch 77/183: chunks 608 to 615
+2025-04-09 23:44:45,442 - INFO - Processing batch 78/183: chunks 616 to 623
+2025-04-09 23:44:45,463 - INFO - Processing batch 79/183: chunks 624 to 631
+2025-04-09 23:44:45,483 - INFO - Processing batch 80/183: chunks 632 to 639
+2025-04-09 23:44:45,504 - INFO - Processing batch 81/183: chunks 640 to 647
+2025-04-09 23:44:45,525 - INFO - Processing batch 82/183: chunks 648 to 655
+2025-04-09 23:44:45,546 - INFO - Processing batch 83/183: chunks 656 to 663
+2025-04-09 23:44:45,566 - INFO - Processing batch 84/183: chunks 664 to 671
+2025-04-09 23:44:45,587 - INFO - Processing batch 85/183: chunks 672 to 679
+2025-04-09 23:44:45,609 - INFO - Processing batch 86/183: chunks 680 to 687
+2025-04-09 23:44:45,630 - INFO - Processing batch 87/183: chunks 688 to 695
+2025-04-09 23:44:45,651 - INFO - Processing batch 88/183: chunks 696 to 703
+2025-04-09 23:44:45,671 - INFO - Processing batch 89/183: chunks 704 to 711
+2025-04-09 23:44:45,692 - INFO - Processing batch 90/183: chunks 712 to 719
+2025-04-09 23:44:45,713 - INFO - Processing batch 91/183: chunks 720 to 727
+2025-04-09 23:44:45,734 - INFO - Processing batch 92/183: chunks 728 to 735
+2025-04-09 23:44:45,752 - INFO - Processing batch 93/183: chunks 736 to 743
+2025-04-09 23:44:45,773 - INFO - Processing batch 94/183: chunks 744 to 751
+2025-04-09 23:44:45,794 - INFO - Processing batch 95/183: chunks 752 to 759
+2025-04-09 23:44:45,814 - INFO - Processing batch 96/183: chunks 760 to 767
+2025-04-09 23:44:45,837 - INFO - Processing batch 97/183: chunks 768 to 775
+2025-04-09 23:44:45,856 - INFO - Processing batch 98/183: chunks 776 to 783
+2025-04-09 23:44:45,876 - INFO - Processing batch 99/183: chunks 784 to 791
+2025-04-09 23:44:45,896 - INFO - Processing batch 100/183: chunks 792 to 799
+2025-04-09 23:44:45,917 - INFO - Processing batch 101/183: chunks 800 to 807
+2025-04-09 23:44:45,935 - INFO - Processing batch 102/183: chunks 808 to 815
+2025-04-09 23:44:45,955 - INFO - Processing batch 103/183: chunks 816 to 823
+2025-04-09 23:44:45,976 - INFO - Processing batch 104/183: chunks 824 to 831
+2025-04-09 23:44:45,997 - INFO - Processing batch 105/183: chunks 832 to 839
+2025-04-09 23:44:46,018 - INFO - Processing batch 106/183: chunks 840 to 847
+2025-04-09 23:44:46,037 - INFO - Processing batch 107/183: chunks 848 to 855
+2025-04-09 23:44:46,058 - INFO - Processing batch 108/183: chunks 856 to 863
+2025-04-09 23:44:46,079 - INFO - Processing batch 109/183: chunks 864 to 871
+2025-04-09 23:44:46,100 - INFO - Processing batch 110/183: chunks 872 to 879
+2025-04-09 23:44:46,121 - INFO - Processing batch 111/183: chunks 880 to 887
+2025-04-09 23:44:46,142 - INFO - Processing batch 112/183: chunks 888 to 895
+2025-04-09 23:44:46,163 - INFO - Processing batch 113/183: chunks 896 to 903
+2025-04-09 23:44:46,184 - INFO - Processing batch 114/183: chunks 904 to 911
+2025-04-09 23:44:46,204 - INFO - Processing batch 115/183: chunks 912 to 919
+2025-04-09 23:44:46,225 - INFO - Processing batch 116/183: chunks 920 to 927
+2025-04-09 23:44:46,247 - INFO - Processing batch 117/183: chunks 928 to 935
+2025-04-09 23:44:46,267 - INFO - Processing batch 118/183: chunks 936 to 943
+2025-04-09 23:44:46,288 - INFO - Processing batch 119/183: chunks 944 to 951
+2025-04-09 23:44:46,308 - INFO - Processing batch 120/183: chunks 952 to 959
+2025-04-09 23:44:46,330 - INFO - Processing batch 121/183: chunks 960 to 967
+2025-04-09 23:44:46,351 - INFO - Processing batch 122/183: chunks 968 to 975
+2025-04-09 23:44:46,371 - INFO - Processing batch 123/183: chunks 976 to 983
+2025-04-09 23:44:46,392 - INFO - Processing batch 124/183: chunks 984 to 991
+2025-04-09 23:44:46,413 - INFO - Processing batch 125/183: chunks 992 to 999
+2025-04-09 23:44:46,433 - INFO - Processing batch 126/183: chunks 1000 to 1007
+2025-04-09 23:44:46,451 - INFO - Processing batch 127/183: chunks 1008 to 1015
+2025-04-09 23:44:46,472 - INFO - Processing batch 128/183: chunks 1016 to 1023
+2025-04-09 23:44:46,490 - INFO - Processing batch 129/183: chunks 1024 to 1031
+2025-04-09 23:44:46,511 - INFO - Processing batch 130/183: chunks 1032 to 1039
+2025-04-09 23:44:46,531 - INFO - Processing batch 131/183: chunks 1040 to 1047
+2025-04-09 23:44:46,551 - INFO - Processing batch 132/183: chunks 1048 to 1055
+2025-04-09 23:44:46,573 - INFO - Processing batch 133/183: chunks 1056 to 1063
+2025-04-09 23:44:46,593 - INFO - Processing batch 134/183: chunks 1064 to 1071
+2025-04-09 23:44:46,615 - INFO - Processing batch 135/183: chunks 1072 to 1079
+2025-04-09 23:44:46,636 - INFO - Processing batch 136/183: chunks 1080 to 1087
+2025-04-09 23:44:46,657 - INFO - Processing batch 137/183: chunks 1088 to 1095
+2025-04-09 23:44:46,677 - INFO - Processing batch 138/183: chunks 1096 to 1103
+2025-04-09 23:44:46,698 - INFO - Processing batch 139/183: chunks 1104 to 1111
+2025-04-09 23:44:46,714 - INFO - Processing batch 140/183: chunks 1112 to 1119
+2025-04-09 23:44:46,734 - INFO - Processing batch 141/183: chunks 1120 to 1127
+2025-04-09 23:44:46,754 - INFO - Processing batch 142/183: chunks 1128 to 1135
+2025-04-09 23:44:46,775 - INFO - Processing batch 143/183: chunks 1136 to 1143
+2025-04-09 23:44:46,796 - INFO - Processing batch 144/183: chunks 1144 to 1151
+2025-04-09 23:44:46,817 - INFO - Processing batch 145/183: chunks 1152 to 1159
+2025-04-09 23:44:46,837 - INFO - Processing batch 146/183: chunks 1160 to 1167
+2025-04-09 23:44:46,859 - INFO - Processing batch 147/183: chunks 1168 to 1175
+2025-04-09 23:44:46,880 - INFO - Processing batch 148/183: chunks 1176 to 1183
+2025-04-09 23:44:46,901 - INFO - Processing batch 149/183: chunks 1184 to 1191
+2025-04-09 23:44:46,922 - INFO - Processing batch 150/183: chunks 1192 to 1199
+2025-04-09 23:44:46,943 - INFO - Processing batch 151/183: chunks 1200 to 1207
+2025-04-09 23:44:46,963 - INFO - Processing batch 152/183: chunks 1208 to 1215
+2025-04-09 23:44:46,985 - INFO - Processing batch 153/183: chunks 1216 to 1223
+2025-04-09 23:44:47,006 - INFO - Processing batch 154/183: chunks 1224 to 1231
+2025-04-09 23:44:47,028 - INFO - Processing batch 155/183: chunks 1232 to 1239
+2025-04-09 23:44:47,049 - INFO - Processing batch 156/183: chunks 1240 to 1247
+2025-04-09 23:44:47,070 - INFO - Processing batch 157/183: chunks 1248 to 1255
+2025-04-09 23:44:47,091 - INFO - Processing batch 158/183: chunks 1256 to 1263
+2025-04-09 23:44:47,112 - INFO - Processing batch 159/183: chunks 1264 to 1271
+2025-04-09 23:44:47,137 - INFO - Processing batch 160/183: chunks 1272 to 1279
+2025-04-09 23:44:47,157 - INFO - Processing batch 161/183: chunks 1280 to 1287
+2025-04-09 23:44:47,178 - INFO - Processing batch 162/183: chunks 1288 to 1295
+2025-04-09 23:44:47,201 - INFO - Processing batch 163/183: chunks 1296 to 1303
+2025-04-09 23:44:47,220 - INFO - Processing batch 164/183: chunks 1304 to 1311
+2025-04-09 23:44:47,242 - INFO - Processing batch 165/183: chunks 1312 to 1319
+2025-04-09 23:44:47,262 - INFO - Processing batch 166/183: chunks 1320 to 1327
+2025-04-09 23:44:47,284 - INFO - Processing batch 167/183: chunks 1328 to 1335
+2025-04-09 23:44:47,304 - INFO - Processing batch 168/183: chunks 1336 to 1343
+2025-04-09 23:44:47,326 - INFO - Processing batch 169/183: chunks 1344 to 1351
+2025-04-09 23:44:47,347 - INFO - Processing batch 170/183: chunks 1352 to 1359
+2025-04-09 23:44:47,369 - INFO - Processing batch 171/183: chunks 1360 to 1367
+2025-04-09 23:44:47,388 - INFO - Processing batch 172/183: chunks 1368 to 1375
+2025-04-09 23:44:47,410 - INFO - Processing batch 173/183: chunks 1376 to 1383
+2025-04-09 23:44:47,430 - INFO - Processing batch 174/183: chunks 1384 to 1391
+2025-04-09 23:44:47,452 - INFO - Processing batch 175/183: chunks 1392 to 1399
+2025-04-09 23:44:47,474 - INFO - Processing batch 176/183: chunks 1400 to 1407
+2025-04-09 23:44:47,496 - INFO - Processing batch 177/183: chunks 1408 to 1415
+2025-04-09 23:44:47,514 - INFO - Processing batch 178/183: chunks 1416 to 1423
+2025-04-09 23:44:47,535 - INFO - Processing batch 179/183: chunks 1424 to 1431
+2025-04-09 23:44:47,556 - INFO - Processing batch 180/183: chunks 1432 to 1439
+2025-04-09 23:44:47,578 - INFO - Processing batch 181/183: chunks 1440 to 1447
+2025-04-09 23:44:47,598 - INFO - Processing batch 182/183: chunks 1448 to 1455
+2025-04-09 23:44:47,616 - INFO - Processing batch 183/183: chunks 1456 to 1459
+2025-04-09 23:44:47,638 - INFO - Saving indexes to disk...
+2025-04-09 23:44:47,715 - INFO - Successfully built and saved all indexes
+2025-04-09 23:44:47,737 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-09 23:44:47,737 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 23:45:01,994 - INFO - 127.0.0.1 - - [09/Apr/2025 23:45:01] "GET / HTTP/1.1" 200 -
+2025-04-09 23:45:02,083 - INFO - 127.0.0.1 - - [09/Apr/2025 23:45:02] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-09 23:45:02,257 - INFO - 127.0.0.1 - - [09/Apr/2025 23:45:02] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-09 23:50:22,043 - INFO - 127.0.0.1 - - [09/Apr/2025 23:50:22] "GET / HTTP/1.1" 200 -
+2025-04-09 23:50:22,127 - INFO - 127.0.0.1 - - [09/Apr/2025 23:50:22] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-09 23:50:22,304 - INFO - 127.0.0.1 - - [09/Apr/2025 23:50:22] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-09 23:50:35,610 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-09 23:50:35,643 - INFO - Use pytorch device_name: cuda
+2025-04-09 23:50:35,644 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-09 23:50:41,195 - INFO - Loading pre-built indexes...
+2025-04-09 23:50:44,347 - INFO - Loaded 1460 legal document chunks
+2025-04-09 23:50:44,369 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-09 23:50:44,369 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 23:50:49,511 - INFO - 127.0.0.1 - - [09/Apr/2025 23:50:49] "GET / HTTP/1.1" 200 -
+2025-04-09 23:50:49,612 - INFO - 127.0.0.1 - - [09/Apr/2025 23:50:49] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-09 23:50:49,715 - INFO - 127.0.0.1 - - [09/Apr/2025 23:50:49] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-09 23:51:03,603 - ERROR - Error generating title: Groq API key is not set in the configuration
+2025-04-09 23:51:03,613 - INFO - Processing query: 'What are the requirements for starting a business in Tunisia?' for conversation 1
+2025-04-09 23:51:03,624 - INFO - Query received: What are the requirements for starting a business in Tunisia?
+2025-04-09 23:51:05,197 - INFO - Search scores:
+Document 473 (chunk: chunk_446_sub_1): score=0.6039, confidence=100.00%
+Document 701 (chunk: chunk_669): score=0.5000, confidence=82.80%
+Document 269 (chunk: chunk_256): score=0.4578, confidence=75.81%
+Document 877 (chunk: chunk_841): score=0.4505, confidence=74.60%
+Document 472 (chunk: chunk_446): score=0.4452, confidence=73.72%
+2025-04-09 23:51:05,201 - INFO - Sending request to Groq API with model: deepseek-r1:1.5b
+2025-04-09 23:51:05,201 - ERROR - Error generating answer: Groq API key is not set in the configuration
+2025-04-09 23:51:05,202 - INFO - Agent workflow completed in 1.60s
+2025-04-09 23:51:05,210 - INFO - Request processed in 1.61s (thinking: 0.00s)
+2025-04-09 23:51:05,211 - INFO - 127.0.0.1 - - [09/Apr/2025 23:51:05] "POST /ask HTTP/1.1" 200 -
+2025-04-09 23:52:17,566 - INFO - 127.0.0.1 - - [09/Apr/2025 23:52:17] "GET / HTTP/1.1" 200 -
+2025-04-09 23:52:17,657 - INFO - 127.0.0.1 - - [09/Apr/2025 23:52:17] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-09 23:52:17,832 - INFO - 127.0.0.1 - - [09/Apr/2025 23:52:17] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-09 23:52:29,237 - INFO - 127.0.0.1 - - [09/Apr/2025 23:52:29] "GET /get_conversation/1 HTTP/1.1" 200 -
+2025-04-09 23:55:30,832 - INFO - 127.0.0.1 - - [09/Apr/2025 23:55:30] "GET / HTTP/1.1" 200 -
+2025-04-09 23:55:30,907 - INFO - 127.0.0.1 - - [09/Apr/2025 23:55:30] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-09 23:55:31,099 - INFO - 127.0.0.1 - - [09/Apr/2025 23:55:31] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-09 23:55:36,044 - ERROR - Error generating title: Groq API key is not set in the configuration
+2025-04-09 23:55:36,053 - INFO - Processing query: 'What are my rights as an employee under Tunisian labor law?' for conversation 2
+2025-04-09 23:55:36,055 - INFO - Query received: What are my rights as an employee under Tunisian labor law?
+2025-04-09 23:55:36,664 - INFO - Search scores:
+Document 230 (chunk: chunk_219): score=0.5000, confidence=100.00%
+Document 206 (chunk: chunk_195): score=0.4609, confidence=92.17%
+Document 1397 (chunk: chunk_1340): score=0.4461, confidence=89.21%
+Document 872 (chunk: chunk_836): score=0.3726, confidence=74.53%
+Document 907 (chunk: chunk_869): score=0.3622, confidence=72.43%
+2025-04-09 23:55:36,668 - INFO - Sending request to Groq API with model: deepseek-r1:1.5b
+2025-04-09 23:55:36,668 - ERROR - Error generating answer: Groq API key is not set in the configuration
+2025-04-09 23:55:36,668 - INFO - Agent workflow completed in 0.62s
+2025-04-09 23:55:36,678 - INFO - Request processed in 0.63s (thinking: 0.00s)
+2025-04-09 23:55:36,678 - INFO - 127.0.0.1 - - [09/Apr/2025 23:55:36] "POST /ask HTTP/1.1" 200 -
+2025-04-09 23:57:05,274 - INFO - Processing query: 'Quels sont les éléments nécessaires pour la validité d’une obligation née d’une volonté ?' for conversation 2
+2025-04-09 23:57:05,275 - INFO - Query received: Quels sont les éléments nécessaires pour la validité d’une obligation née d’une volonté ?
+2025-04-09 23:57:05,308 - INFO - Search scores:
+Document 1 (chunk: chunk_1): score=0.6817, confidence=100.00%
+Document 343 (chunk: chunk_324): score=0.2843, confidence=41.71%
+Document 22 (chunk: chunk_22): score=0.2688, confidence=39.44%
+Document 745 (chunk: chunk_713): score=0.2111, confidence=30.97%
+Document 267 (chunk: chunk_254): score=0.2104, confidence=30.87%
+2025-04-09 23:57:05,309 - INFO - Sending request to Groq API with model: deepseek-r1:1.5b
+2025-04-09 23:57:05,309 - ERROR - Error generating answer: Groq API key is not set in the configuration
+2025-04-09 23:57:05,311 - INFO - Agent workflow completed in 0.04s
+2025-04-09 23:57:05,317 - INFO - Request processed in 0.05s (thinking: 0.00s)
+2025-04-09 23:57:05,317 - INFO - 127.0.0.1 - - [09/Apr/2025 23:57:05] "POST /ask HTTP/1.1" 200 -
+2025-04-09 23:57:46,049 - INFO - Processing query: 'Une offre envoyée sans délai doit-elle être acceptée immédiatement ?' for conversation 2
+2025-04-09 23:57:46,050 - INFO - Query received: Une offre envoyée sans délai doit-elle être acceptée immédiatement ?
+2025-04-09 23:57:46,080 - INFO - Search scores:
+Document 35 (chunk: chunk_35): score=0.6339, confidence=100.00%
+Document 26 (chunk: chunk_26): score=0.6320, confidence=99.71%
+Document 34 (chunk: chunk_34): score=0.5589, confidence=88.16%
+Document 33 (chunk: chunk_33): score=0.5008, confidence=79.01%
+Document 32 (chunk: chunk_32): score=0.4765, confidence=75.18%
+2025-04-09 23:57:46,083 - INFO - Sending request to Groq API with model: deepseek-r1:1.5b
+2025-04-09 23:57:46,083 - ERROR - Error generating answer: Groq API key is not set in the configuration
+2025-04-09 23:57:46,083 - INFO - Agent workflow completed in 0.04s
+2025-04-09 23:57:46,090 - INFO - Request processed in 0.05s (thinking: 0.00s)
+2025-04-09 23:57:46,090 - INFO - 127.0.0.1 - - [09/Apr/2025 23:57:46] "POST /ask HTTP/1.1" 200 -
+2025-04-09 23:58:41,847 - INFO - Processing query: 'Quelle est la différence entre condition suspensive et résolutoire ?' for conversation 2
+2025-04-09 23:58:41,848 - INFO - Query received: Quelle est la différence entre condition suspensive et résolutoire ?
+2025-04-09 23:58:41,880 - INFO - Search scores:
+Document 151 (chunk: chunk_140): score=0.6434, confidence=100.00%
+Document 383 (chunk: chunk_364): score=0.5776, confidence=89.77%
+Document 134 (chunk: chunk_125): score=0.4678, confidence=72.70%
+Document 139 (chunk: chunk_130): score=0.4013, confidence=62.37%
+Document 713 (chunk: chunk_681): score=0.3049, confidence=47.39%
+2025-04-09 23:58:41,883 - INFO - Sending request to Groq API with model: deepseek-r1:1.5b
+2025-04-09 23:58:41,883 - ERROR - Error generating answer: Groq API key is not set in the configuration
+2025-04-09 23:58:41,883 - INFO - Agent workflow completed in 0.04s
+2025-04-09 23:58:41,890 - INFO - Request processed in 0.05s (thinking: 0.00s)
+2025-04-09 23:58:41,891 - INFO - 127.0.0.1 - - [09/Apr/2025 23:58:41] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:00:58,547 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 00:00:58,572 - INFO - Use pytorch device_name: cuda
+2025-04-10 00:00:58,572 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 00:01:03,467 - INFO - Loading pre-built indexes...
+2025-04-10 00:01:06,512 - INFO - Loaded 1460 legal document chunks
+2025-04-10 00:01:06,531 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-10 00:01:06,531 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 00:01:12,327 - INFO - 127.0.0.1 - - [10/Apr/2025 00:01:12] "GET / HTTP/1.1" 200 -
+2025-04-10 00:01:12,441 - INFO - 127.0.0.1 - - [10/Apr/2025 00:01:12] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:01:12,580 - INFO - 127.0.0.1 - - [10/Apr/2025 00:01:12] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:01:15,794 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:01:16,313 - INFO - Token usage: prompt=106, completion=53, total=159
+2025-04-10 00:01:16,322 - INFO - Processing query: 'Quelle est la différence entre condition suspensive et résolutoire ?' for conversation 3
+2025-04-10 00:01:16,328 - INFO - Query received: Quelle est la différence entre condition suspensive et résolutoire ?
+2025-04-10 00:01:17,376 - INFO - Search scores:
+Document 151 (chunk: chunk_140): score=0.6434, confidence=100.00%
+Document 383 (chunk: chunk_364): score=0.5776, confidence=89.77%
+Document 134 (chunk: chunk_125): score=0.4678, confidence=72.70%
+Document 139 (chunk: chunk_130): score=0.4013, confidence=62.37%
+Document 713 (chunk: chunk_681): score=0.3049, confidence=47.39%
+2025-04-10 00:01:17,379 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:01:17,380 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:01:21,644 - INFO - Token usage: prompt=1314, completion=980, total=2294
+2025-04-10 00:01:21,647 - INFO - Agent workflow completed in 5.85s
+2025-04-10 00:01:21,655 - INFO - Request processed in 5.86s (thinking: 4.27s)
+2025-04-10 00:01:21,656 - INFO - 127.0.0.1 - - [10/Apr/2025 00:01:21] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:09:13,370 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 00:09:13,406 - INFO - Use pytorch device_name: cuda
+2025-04-10 00:09:13,406 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 00:09:18,946 - INFO - Loading pre-built indexes...
+2025-04-10 00:09:22,071 - INFO - Loaded 1460 legal document chunks
+2025-04-10 00:09:22,084 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-10 00:09:22,085 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 00:09:27,746 - INFO - 127.0.0.1 - - [10/Apr/2025 00:09:27] "GET / HTTP/1.1" 200 -
+2025-04-10 00:09:27,831 - INFO - 127.0.0.1 - - [10/Apr/2025 00:09:27] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:09:27,972 - INFO - 127.0.0.1 - - [10/Apr/2025 00:09:27] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:09:30,789 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:09:31,327 - INFO - Token usage: prompt=102, completion=26, total=128
+2025-04-10 00:09:31,337 - INFO - Processing query: 'Que dit la loi sur l'enrichissement sans cause ?' for conversation 4
+2025-04-10 00:09:31,343 - INFO - Query received: Que dit la loi sur l'enrichissement sans cause ?
+2025-04-10 00:09:32,369 - INFO - Search scores:
+Document 66 (chunk: chunk_66): score=0.6333, confidence=100.00%
+Document 1151 (chunk: chunk_1100): score=0.6046, confidence=95.46%
+Document 81 (chunk: chunk_81): score=0.4715, confidence=74.45%
+Document 70 (chunk: chunk_70): score=0.4336, confidence=68.46%
+Document 1400 (chunk: chunk_1343): score=0.3731, confidence=58.92%
+2025-04-10 00:09:32,374 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:09:32,374 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:09:36,022 - INFO - Token usage: prompt=1072, completion=854, total=1926
+2025-04-10 00:09:36,025 - INFO - Agent workflow completed in 5.24s
+2025-04-10 00:09:36,033 - INFO - Request processed in 5.24s (thinking: 3.65s)
+2025-04-10 00:09:36,033 - INFO - 127.0.0.1 - - [10/Apr/2025 00:09:36] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:10:25,536 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 00:10:25,575 - INFO - Use pytorch device_name: cuda
+2025-04-10 00:10:25,575 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 00:10:30,350 - INFO - Loading pre-built indexes...
+2025-04-10 00:10:33,405 - INFO - Loaded 1460 legal document chunks
+2025-04-10 00:10:33,417 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-10 00:10:33,417 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 00:10:35,410 - INFO - 127.0.0.1 - - [10/Apr/2025 00:10:35] "GET / HTTP/1.1" 200 -
+2025-04-10 00:10:35,493 - INFO - 127.0.0.1 - - [10/Apr/2025 00:10:35] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:10:35,643 - INFO - 127.0.0.1 - - [10/Apr/2025 00:10:35] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:10:43,796 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:10:44,314 - INFO - Token usage: prompt=102, completion=35, total=137
+2025-04-10 00:10:44,323 - INFO - Processing query: 'Que dit la loi sur l'enrichissement sans cause ?' for conversation 5
+2025-04-10 00:10:44,329 - INFO - Query received: Que dit la loi sur l'enrichissement sans cause ?
+2025-04-10 00:10:45,285 - INFO - Search scores:
+Document 66 (chunk: chunk_66): score=0.6333, confidence=100.00%
+Document 1151 (chunk: chunk_1100): score=0.6046, confidence=95.46%
+Document 81 (chunk: chunk_81): score=0.4715, confidence=74.45%
+Document 70 (chunk: chunk_70): score=0.4336, confidence=68.46%
+Document 1400 (chunk: chunk_1343): score=0.3731, confidence=58.92%
+2025-04-10 00:10:45,288 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:10:45,288 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:10:48,628 - INFO - Token usage: prompt=1072, completion=822, total=1894
+2025-04-10 00:10:48,631 - INFO - Agent workflow completed in 4.84s
+2025-04-10 00:10:48,638 - INFO - Request processed in 4.84s (thinking: 3.34s)
+2025-04-10 00:10:48,639 - INFO - 127.0.0.1 - - [10/Apr/2025 00:10:48] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:13:29,255 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 00:13:29,286 - INFO - Use pytorch device_name: cuda
+2025-04-10 00:13:29,286 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 00:13:34,837 - INFO - Loading pre-built indexes...
+2025-04-10 00:13:38,120 - INFO - Loaded 1460 legal document chunks
+2025-04-10 00:13:38,143 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-10 00:13:38,143 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 00:13:38,206 - INFO - 127.0.0.1 - - [10/Apr/2025 00:13:38] "GET / HTTP/1.1" 200 -
+2025-04-10 00:13:38,353 - INFO - 127.0.0.1 - - [10/Apr/2025 00:13:38] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:13:38,602 - INFO - 127.0.0.1 - - [10/Apr/2025 00:13:38] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:13:44,433 - INFO - 127.0.0.1 - - [10/Apr/2025 00:13:44] "DELETE /delete_conversation/2 HTTP/1.1" 200 -
+2025-04-10 00:13:47,735 - INFO - 127.0.0.1 - - [10/Apr/2025 00:13:47] "DELETE /delete_conversation/1 HTTP/1.1" 200 -
+2025-04-10 00:14:09,797 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:14:10,286 - INFO - Token usage: prompt=110, completion=39, total=149
+2025-04-10 00:14:10,296 - INFO - Processing query: 'Peut-on stipuler un contrat au profit d’un tiers ? Si oui, dans quel cadre ?' for conversation 6
+2025-04-10 00:14:10,303 - INFO - Query received: Peut-on stipuler un contrat au profit d’un tiers ? Si oui, dans quel cadre ?
+2025-04-10 00:14:11,355 - INFO - Search scores:
+Document 37 (chunk: chunk_37): score=0.6958, confidence=100.00%
+Document 39 (chunk: chunk_39): score=0.5000, confidence=71.86%
+Document 1347 (chunk: chunk_1290): score=0.4187, confidence=60.17%
+Document 1061 (chunk: chunk_1012): score=0.4118, confidence=59.19%
+Document 1366 (chunk: chunk_1309): score=0.3566, confidence=51.25%
+2025-04-10 00:14:11,358 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:14:11,358 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:14:14,169 - INFO - Token usage: prompt=1156, completion=683, total=1839
+2025-04-10 00:14:14,173 - INFO - Agent workflow completed in 4.38s
+2025-04-10 00:14:14,185 - INFO - Request processed in 4.39s (thinking: 2.82s)
+2025-04-10 00:14:14,186 - INFO - 127.0.0.1 - - [10/Apr/2025 00:14:14] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:15:50,707 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:15:51,202 - INFO - Token usage: prompt=104, completion=50, total=154
+2025-04-10 00:15:51,212 - INFO - Processing query: 'L'État est-il responsable des fautes de ses agents ?' for conversation 7
+2025-04-10 00:15:51,213 - INFO - Query received: L'État est-il responsable des fautes de ses agents ?
+2025-04-10 00:15:51,248 - INFO - Search scores:
+Document 83 (chunk: chunk_83): score=0.6363, confidence=100.00%
+Document 114 (chunk: chunk_105): score=0.3376, confidence=53.06%
+Document 105 (chunk: chunk_97_sub_1): score=0.3244, confidence=50.98%
+Document 104 (chunk: chunk_97): score=0.3226, confidence=50.70%
+Document 902 (chunk: chunk_864): score=0.3196, confidence=50.23%
+2025-04-10 00:15:51,252 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:15:51,252 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:15:54,229 - INFO - Token usage: prompt=1425, completion=725, total=2150
+2025-04-10 00:15:54,231 - INFO - Agent workflow completed in 3.52s
+2025-04-10 00:15:54,240 - INFO - Request processed in 3.53s (thinking: 2.98s)
+2025-04-10 00:15:54,240 - INFO - 127.0.0.1 - - [10/Apr/2025 00:15:54] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:16:24,552 - INFO - 127.0.0.1 - - [10/Apr/2025 00:16:24] "GET / HTTP/1.1" 200 -
+2025-04-10 00:16:24,856 - INFO - 127.0.0.1 - - [10/Apr/2025 00:16:24] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:16:25,201 - INFO - 127.0.0.1 - - [10/Apr/2025 00:16:25] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:16:27,255 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:16:27,771 - INFO - Token usage: prompt=103, completion=20, total=123
+2025-04-10 00:16:27,780 - INFO - Processing query: 'What are my rights as an employee under Tunisian labor law?' for conversation 8
+2025-04-10 00:16:27,781 - INFO - Query received: What are my rights as an employee under Tunisian labor law?
+2025-04-10 00:16:28,344 - INFO - Search scores:
+Document 230 (chunk: chunk_219): score=0.5000, confidence=100.00%
+Document 206 (chunk: chunk_195): score=0.4609, confidence=92.17%
+Document 1397 (chunk: chunk_1340): score=0.4461, confidence=89.21%
+Document 872 (chunk: chunk_836): score=0.3726, confidence=74.53%
+Document 907 (chunk: chunk_869): score=0.3622, confidence=72.43%
+2025-04-10 00:16:28,348 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:16:28,348 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:16:30,462 - INFO - Token usage: prompt=933, completion=461, total=1394
+2025-04-10 00:16:30,464 - INFO - Agent workflow completed in 3.21s
+2025-04-10 00:16:30,473 - INFO - Request processed in 3.22s (thinking: 2.12s)
+2025-04-10 00:16:30,474 - INFO - 127.0.0.1 - - [10/Apr/2025 00:16:30] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:17:25,233 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 00:17:25,267 - INFO - Use pytorch device_name: cuda
+2025-04-10 00:17:25,267 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 00:17:33,047 - INFO - Loading pre-built indexes...
+2025-04-10 00:17:36,268 - INFO - Loaded 1460 legal document chunks
+2025-04-10 00:17:36,282 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-10 00:17:36,282 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 00:17:43,686 - INFO - 127.0.0.1 - - [10/Apr/2025 00:17:43] "GET / HTTP/1.1" 200 -
+2025-04-10 00:17:43,776 - INFO - 127.0.0.1 - - [10/Apr/2025 00:17:43] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:17:43,918 - INFO - 127.0.0.1 - - [10/Apr/2025 00:17:43] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:17:47,755 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:17:48,272 - INFO - Token usage: prompt=108, completion=36, total=144
+2025-04-10 00:17:48,283 - INFO - Processing query: 'Peut-on imposer une condition qui empêche une personne de se marier ?' for conversation 9
+2025-04-10 00:17:48,306 - INFO - Query received: Peut-on imposer une condition qui empêche une personne de se marier ?
+2025-04-10 00:17:49,431 - INFO - Search scores:
+Document 123 (chunk: chunk_114): score=0.6444, confidence=100.00%
+Document 139 (chunk: chunk_130): score=0.3971, confidence=61.63%
+Document 694 (chunk: chunk_662): score=0.3503, confidence=54.37%
+Document 113 (chunk: chunk_104): score=0.3377, confidence=52.41%
+Document 948 (chunk: chunk_903): score=0.3361, confidence=52.16%
+2025-04-10 00:17:49,434 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:17:49,434 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:17:51,897 - INFO - Token usage: prompt=1187, completion=583, total=1770
+2025-04-10 00:17:51,900 - INFO - Agent workflow completed in 4.14s
+2025-04-10 00:17:51,908 - INFO - Request processed in 4.15s (thinking: 2.47s)
+2025-04-10 00:17:51,910 - INFO - 127.0.0.1 - - [10/Apr/2025 00:17:51] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:19:51,007 - INFO - 127.0.0.1 - - [10/Apr/2025 00:19:51] "GET /get_conversation/7 HTTP/1.1" 200 -
+2025-04-10 00:19:52,786 - INFO - 127.0.0.1 - - [10/Apr/2025 00:19:52] "GET /get_conversation/6 HTTP/1.1" 200 -
+2025-04-10 00:19:54,122 - INFO - 127.0.0.1 - - [10/Apr/2025 00:19:54] "GET /get_conversation/5 HTTP/1.1" 200 -
+2025-04-10 00:27:41,482 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 00:27:41,546 - INFO - Use pytorch device_name: cuda
+2025-04-10 00:27:41,546 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 00:27:47,388 - INFO - Loading pre-built indexes...
+2025-04-10 00:27:51,728 - INFO - Loaded 1460 legal document chunks
+2025-04-10 00:27:51,762 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-10 00:27:51,762 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 00:27:55,529 - INFO - 127.0.0.1 - - [10/Apr/2025 00:27:55] "GET / HTTP/1.1" 200 -
+2025-04-10 00:27:55,771 - INFO - 127.0.0.1 - - [10/Apr/2025 00:27:55] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:27:55,796 - INFO - 127.0.0.1 - - [10/Apr/2025 00:27:55] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:27:58,596 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:27:59,143 - INFO - Token usage: prompt=103, completion=35, total=138
+2025-04-10 00:27:59,165 - INFO - Processing query: 'La violence psychologique peut-elle invalider une obligation ?' for conversation 10
+2025-04-10 00:27:59,173 - INFO - Query received: La violence psychologique peut-elle invalider une obligation ?
+2025-04-10 00:28:00,333 - INFO - Search scores:
+Document 52 (chunk: chunk_52): score=0.7049, confidence=100.00%
+Document 50 (chunk: chunk_50): score=0.5970, confidence=84.70%
+Document 53 (chunk: chunk_53): score=0.5870, confidence=83.28%
+Document 49 (chunk: chunk_49): score=0.5767, confidence=81.81%
+Document 448 (chunk: chunk_422): score=0.5126, confidence=72.72%
+2025-04-10 00:28:00,336 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:28:00,336 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:28:03,738 - INFO - Token usage: prompt=960, completion=852, total=1812
+2025-04-10 00:28:03,741 - INFO - Agent workflow completed in 5.15s
+2025-04-10 00:28:03,763 - INFO - Request processed in 5.17s (thinking: 3.41s)
+2025-04-10 00:28:03,764 - INFO - 127.0.0.1 - - [10/Apr/2025 00:28:03] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:29:17,577 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 00:29:17,612 - INFO - Use pytorch device_name: cuda
+2025-04-10 00:29:17,612 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 00:29:22,972 - INFO - Loading pre-built indexes...
+2025-04-10 00:29:26,326 - INFO - Loaded 1460 legal document chunks
+2025-04-10 00:29:26,338 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-10 00:29:26,339 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 00:29:38,036 - INFO - 127.0.0.1 - - [10/Apr/2025 00:29:38] "GET / HTTP/1.1" 200 -
+2025-04-10 00:29:38,120 - INFO - 127.0.0.1 - - [10/Apr/2025 00:29:38] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:29:38,288 - INFO - 127.0.0.1 - - [10/Apr/2025 00:29:38] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:29:44,610 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:29:45,100 - INFO - Token usage: prompt=107, completion=34, total=141
+2025-04-10 00:29:45,109 - INFO - Processing query: 'Une personne ivre peut-elle contester un contrat qu’elle a signé ?' for conversation 11
+2025-04-10 00:29:45,116 - INFO - Query received: Une personne ivre peut-elle contester un contrat qu’elle a signé ?
+2025-04-10 00:29:46,172 - INFO - Search scores:
+Document 1399 (chunk: chunk_1342): score=0.5126, confidence=100.00%
+Document 476 (chunk: chunk_448): score=0.5000, confidence=97.54%
+Document 480 (chunk: chunk_452): score=0.4380, confidence=85.44%
+Document 96 (chunk: chunk_92): score=0.4153, confidence=81.02%
+Document 49 (chunk: chunk_49): score=0.3438, confidence=67.08%
+2025-04-10 00:29:46,177 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:29:46,177 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:29:49,114 - INFO - Token usage: prompt=1032, completion=716, total=1748
+2025-04-10 00:29:49,117 - INFO - Agent workflow completed in 4.51s
+2025-04-10 00:29:49,126 - INFO - Request processed in 4.52s (thinking: 2.94s)
+2025-04-10 00:29:49,127 - INFO - 127.0.0.1 - - [10/Apr/2025 00:29:49] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:33:08,120 - INFO - 127.0.0.1 - - [10/Apr/2025 00:33:08] "DELETE /delete_conversation/11 HTTP/1.1" 200 -
+2025-04-10 00:37:59,987 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 00:38:00,030 - INFO - Use pytorch device_name: cuda
+2025-04-10 00:38:00,030 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 00:38:06,263 - INFO - Loading pre-built indexes...
+2025-04-10 00:38:09,582 - INFO - Loaded 1460 legal document chunks
+2025-04-10 00:38:09,596 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-10 00:38:09,596 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 00:38:11,136 - INFO - 127.0.0.1 - - [10/Apr/2025 00:38:11] "GET / HTTP/1.1" 200 -
+2025-04-10 00:38:11,349 - INFO - 127.0.0.1 - - [10/Apr/2025 00:38:11] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:38:11,393 - INFO - 127.0.0.1 - - [10/Apr/2025 00:38:11] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:38:14,751 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:38:15,245 - INFO - Token usage: prompt=99, completion=12, total=111
+2025-04-10 00:38:15,254 - INFO - Processing query: 'Un débiteur peut-il perdre le bénéfice du terme ? Si oui, dans quels cas ?' for conversation 12
+2025-04-10 00:38:15,260 - INFO - Query received: Un débiteur peut-il perdre le bénéfice du terme ? Si oui, dans quels cas ?
+2025-04-10 00:38:16,289 - INFO - Search scores:
+Document 156 (chunk: chunk_145): score=0.5825, confidence=100.00%
+Document 154 (chunk: chunk_143): score=0.5000, confidence=85.84%
+Document 1431 (chunk: chunk_1374): score=0.3944, confidence=67.71%
+Document 1447 (chunk: chunk_1390): score=0.3132, confidence=53.77%
+Document 146 (chunk: chunk_135): score=0.2997, confidence=51.46%
+2025-04-10 00:38:16,291 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:38:16,291 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:38:20,185 - INFO - Token usage: prompt=1371, completion=980, total=2351
+2025-04-10 00:38:20,188 - INFO - Agent workflow completed in 5.44s
+2025-04-10 00:38:20,197 - INFO - Request processed in 5.45s (thinking: 3.90s)
+2025-04-10 00:38:20,198 - INFO - 127.0.0.1 - - [10/Apr/2025 00:38:20] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:40:43,288 - INFO - 127.0.0.1 - - [10/Apr/2025 00:40:43] "GET / HTTP/1.1" 200 -
+2025-04-10 00:40:43,410 - INFO - 127.0.0.1 - - [10/Apr/2025 00:40:43] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:40:43,557 - INFO - 127.0.0.1 - - [10/Apr/2025 00:40:43] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:40:56,788 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:40:57,159 - INFO - Token usage: prompt=84, completion=7, total=91
+2025-04-10 00:40:57,169 - INFO - Processing query: 'can i cancel my contract at anytime?' for conversation 13
+2025-04-10 00:40:57,171 - INFO - Query received: can i cancel my contract at anytime?
+2025-04-10 00:40:57,754 - INFO - Search scores:
+Document 545 (chunk: chunk_517): score=0.5000, confidence=100.00%
+Document 872 (chunk: chunk_836): score=0.4787, confidence=95.73%
+Document 997 (chunk: chunk_950): score=0.4431, confidence=88.63%
+Document 659 (chunk: chunk_631): score=0.4125, confidence=82.50%
+Document 11 (chunk: chunk_11): score=0.4020, confidence=80.41%
+2025-04-10 00:40:57,766 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:40:57,767 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:41:01,053 - INFO - Token usage: prompt=1038, completion=808, total=1846
+2025-04-10 00:41:01,054 - INFO - Agent workflow completed in 4.27s
+2025-04-10 00:41:01,067 - INFO - Request processed in 4.28s (thinking: 3.30s)
+2025-04-10 00:41:01,068 - INFO - 127.0.0.1 - - [10/Apr/2025 00:41:01] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:43:29,766 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 00:43:29,799 - INFO - Use pytorch device_name: cuda
+2025-04-10 00:43:29,799 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 00:43:35,069 - INFO - Loading pre-built indexes...
+2025-04-10 00:43:38,559 - INFO - Loaded 1460 legal document chunks
+2025-04-10 00:43:38,583 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-10 00:43:38,584 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 00:43:43,612 - INFO - 127.0.0.1 - - [10/Apr/2025 00:43:43] "GET / HTTP/1.1" 200 -
+2025-04-10 00:43:43,746 - INFO - 127.0.0.1 - - [10/Apr/2025 00:43:43] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:43:43,874 - INFO - 127.0.0.1 - - [10/Apr/2025 00:43:43] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:43:53,214 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:43:53,715 - INFO - Token usage: prompt=83, completion=17, total=100
+2025-04-10 00:43:53,724 - INFO - Processing query: 'can i fire anyone at anytime?' for conversation 14
+2025-04-10 00:43:53,731 - INFO - Query received: can i fire anyone at anytime?
+2025-04-10 00:43:55,431 - INFO - Search scores:
+Document 545 (chunk: chunk_517): score=0.5000, confidence=100.00%
+Document 1414 (chunk: chunk_1357): score=0.4463, confidence=89.25%
+Document 949 (chunk: chunk_904): score=0.4190, confidence=83.81%
+Document 659 (chunk: chunk_631): score=0.4125, confidence=82.50%
+Document 950 (chunk: chunk_905): score=0.4124, confidence=82.47%
+2025-04-10 00:43:55,436 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:43:55,436 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:43:56,531 - INFO - Token usage: prompt=976, completion=194, total=1170
+2025-04-10 00:43:56,531 - INFO - Agent workflow completed in 3.32s
+2025-04-10 00:43:56,542 - INFO - Request processed in 3.33s (thinking: 1.10s)
+2025-04-10 00:43:56,543 - INFO - 127.0.0.1 - - [10/Apr/2025 00:43:56] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:44:37,186 - INFO - 127.0.0.1 - - [10/Apr/2025 00:44:37] "GET / HTTP/1.1" 200 -
+2025-04-10 00:44:37,499 - INFO - 127.0.0.1 - - [10/Apr/2025 00:44:37] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:44:37,859 - INFO - 127.0.0.1 - - [10/Apr/2025 00:44:37] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:44:41,103 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:44:41,599 - INFO - Token usage: prompt=84, completion=11, total=95
+2025-04-10 00:44:41,609 - INFO - Processing query: 'can i cancel my contract at anytime?' for conversation 15
+2025-04-10 00:44:41,610 - INFO - Query received: can i cancel my contract at anytime?
+2025-04-10 00:44:42,071 - INFO - Search scores:
+Document 545 (chunk: chunk_517): score=0.5000, confidence=100.00%
+Document 872 (chunk: chunk_836): score=0.4787, confidence=95.73%
+Document 997 (chunk: chunk_950): score=0.4431, confidence=88.63%
+Document 659 (chunk: chunk_631): score=0.4125, confidence=82.50%
+Document 11 (chunk: chunk_11): score=0.4020, confidence=80.41%
+2025-04-10 00:44:42,080 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:44:42,080 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:44:45,456 - INFO - Token usage: prompt=1038, completion=715, total=1753
+2025-04-10 00:44:45,457 - INFO - Agent workflow completed in 4.35s
+2025-04-10 00:44:45,468 - INFO - Request processed in 4.36s (thinking: 3.39s)
+2025-04-10 00:44:45,469 - INFO - 127.0.0.1 - - [10/Apr/2025 00:44:45] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:45:10,550 - INFO - 127.0.0.1 - - [10/Apr/2025 00:45:10] "GET / HTTP/1.1" 200 -
+2025-04-10 00:45:10,676 - INFO - 127.0.0.1 - - [10/Apr/2025 00:45:10] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:45:10,823 - INFO - 127.0.0.1 - - [10/Apr/2025 00:45:10] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:45:12,954 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:45:13,464 - INFO - Token usage: prompt=84, completion=9, total=93
+2025-04-10 00:45:13,473 - INFO - Processing query: 'can i cancel my contract at anytime?' for conversation 16
+2025-04-10 00:45:13,474 - INFO - Query received: can i cancel my contract at anytime?
+2025-04-10 00:45:13,925 - INFO - Search scores:
+Document 545 (chunk: chunk_517): score=0.5000, confidence=100.00%
+Document 872 (chunk: chunk_836): score=0.4787, confidence=95.73%
+Document 997 (chunk: chunk_950): score=0.4431, confidence=88.63%
+Document 659 (chunk: chunk_631): score=0.4125, confidence=82.50%
+Document 11 (chunk: chunk_11): score=0.4020, confidence=80.41%
+2025-04-10 00:45:13,937 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:45:13,937 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:45:15,799 - INFO - Token usage: prompt=1038, completion=390, total=1428
+2025-04-10 00:45:15,800 - INFO - Agent workflow completed in 2.85s
+2025-04-10 00:45:15,811 - INFO - Request processed in 2.86s (thinking: 1.87s)
+2025-04-10 00:45:15,812 - INFO - 127.0.0.1 - - [10/Apr/2025 00:45:15] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:45:38,646 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 00:45:38,679 - INFO - Use pytorch device_name: cuda
+2025-04-10 00:45:38,679 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 00:45:46,603 - INFO - Loading pre-built indexes...
+2025-04-10 00:45:49,704 - INFO - Loaded 1460 legal document chunks
+2025-04-10 00:45:49,724 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-10 00:45:49,724 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 00:45:58,157 - INFO - 127.0.0.1 - - [10/Apr/2025 00:45:58] "GET / HTTP/1.1" 200 -
+2025-04-10 00:45:58,317 - INFO - 127.0.0.1 - - [10/Apr/2025 00:45:58] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:45:58,414 - INFO - 127.0.0.1 - - [10/Apr/2025 00:45:58] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:46:00,537 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:46:01,029 - INFO - Token usage: prompt=84, completion=9, total=93
+2025-04-10 00:46:01,038 - INFO - Processing query: 'can i cancel my contract at anytime?' for conversation 17
+2025-04-10 00:46:01,045 - INFO - Query received: can i cancel my contract at anytime?
+2025-04-10 00:46:02,609 - INFO - Search scores:
+Document 545 (chunk: chunk_517): score=0.5000, confidence=100.00%
+Document 872 (chunk: chunk_836): score=0.4787, confidence=95.73%
+Document 997 (chunk: chunk_950): score=0.4431, confidence=88.63%
+Document 659 (chunk: chunk_631): score=0.4125, confidence=82.50%
+Document 11 (chunk: chunk_11): score=0.4020, confidence=80.41%
+2025-04-10 00:46:02,619 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:46:02,619 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:46:06,082 - INFO - Token usage: prompt=1038, completion=866, total=1904
+2025-04-10 00:46:06,083 - INFO - Agent workflow completed in 5.55s
+2025-04-10 00:46:06,095 - INFO - Request processed in 5.56s (thinking: 3.47s)
+2025-04-10 00:46:06,096 - INFO - 127.0.0.1 - - [10/Apr/2025 00:46:06] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:47:56,730 - INFO - 127.0.0.1 - - [10/Apr/2025 00:47:56] "GET / HTTP/1.1" 200 -
+2025-04-10 00:47:56,851 - INFO - 127.0.0.1 - - [10/Apr/2025 00:47:56] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:47:56,985 - INFO - 127.0.0.1 - - [10/Apr/2025 00:47:56] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:47:59,508 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:48:00,020 - INFO - Token usage: prompt=84, completion=8, total=92
+2025-04-10 00:48:00,029 - INFO - Processing query: 'can i cancel my contract at anytime?' for conversation 18
+2025-04-10 00:48:00,030 - INFO - Query received: can i cancel my contract at anytime?
+2025-04-10 00:48:00,521 - INFO - Search scores:
+Document 545 (chunk: chunk_517): score=0.5000, confidence=100.00%
+Document 872 (chunk: chunk_836): score=0.4787, confidence=95.73%
+Document 997 (chunk: chunk_950): score=0.4431, confidence=88.63%
+Document 659 (chunk: chunk_631): score=0.4125, confidence=82.50%
+Document 11 (chunk: chunk_11): score=0.4020, confidence=80.41%
+2025-04-10 00:48:00,529 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:48:00,530 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:48:03,329 - INFO - Token usage: prompt=1038, completion=671, total=1709
+2025-04-10 00:48:03,330 - INFO - Agent workflow completed in 3.82s
+2025-04-10 00:48:03,342 - INFO - Request processed in 3.83s (thinking: 2.81s)
+2025-04-10 00:48:03,343 - INFO - 127.0.0.1 - - [10/Apr/2025 00:48:03] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:49:47,632 - INFO - 127.0.0.1 - - [10/Apr/2025 00:49:47] "GET / HTTP/1.1" 200 -
+2025-04-10 00:49:47,936 - INFO - 127.0.0.1 - - [10/Apr/2025 00:49:47] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:49:48,278 - INFO - 127.0.0.1 - - [10/Apr/2025 00:49:48] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:49:50,346 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:49:50,840 - INFO - Token usage: prompt=84, completion=11, total=95
+2025-04-10 00:49:50,849 - INFO - Processing query: 'can i cancel my contract at anytime?' for conversation 19
+2025-04-10 00:49:50,850 - INFO - Query received: can i cancel my contract at anytime?
+2025-04-10 00:49:51,283 - INFO - Search scores:
+Document 545 (chunk: chunk_517): score=0.5000, confidence=100.00%
+Document 872 (chunk: chunk_836): score=0.4787, confidence=95.73%
+Document 997 (chunk: chunk_950): score=0.4431, confidence=88.63%
+Document 659 (chunk: chunk_631): score=0.4125, confidence=82.50%
+Document 11 (chunk: chunk_11): score=0.4020, confidence=80.41%
+2025-04-10 00:49:51,290 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:49:51,291 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:49:53,859 - INFO - Token usage: prompt=1038, completion=616, total=1654
+2025-04-10 00:49:53,859 - INFO - Agent workflow completed in 3.51s
+2025-04-10 00:49:53,869 - INFO - Request processed in 3.52s (thinking: 2.58s)
+2025-04-10 00:49:53,869 - INFO - 127.0.0.1 - - [10/Apr/2025 00:49:53] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:51:16,960 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 00:51:16,984 - INFO - Use pytorch device_name: cuda
+2025-04-10 00:51:16,985 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 00:51:25,175 - INFO - Loading pre-built indexes...
+2025-04-10 00:51:28,324 - INFO - Loaded 1460 legal document chunks
+2025-04-10 00:51:28,337 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-10 00:51:28,337 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 00:51:28,504 - INFO - 127.0.0.1 - - [10/Apr/2025 00:51:28] "GET / HTTP/1.1" 200 -
+2025-04-10 00:51:28,754 - INFO - 127.0.0.1 - - [10/Apr/2025 00:51:28] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:51:28,929 - INFO - 127.0.0.1 - - [10/Apr/2025 00:51:28] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:51:33,209 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:51:33,866 - INFO - Token usage: prompt=84, completion=11, total=95
+2025-04-10 00:51:33,875 - INFO - Processing query: 'can i cancel my contract at anytime?' for conversation 20
+2025-04-10 00:51:33,881 - INFO - Query received: can i cancel my contract at anytime?
+2025-04-10 00:51:35,411 - INFO - Search scores:
+Document 545 (chunk: chunk_517): score=0.5000, confidence=100.00%
+Document 872 (chunk: chunk_836): score=0.4787, confidence=95.73%
+Document 997 (chunk: chunk_950): score=0.4431, confidence=88.63%
+Document 659 (chunk: chunk_631): score=0.4125, confidence=82.50%
+Document 11 (chunk: chunk_11): score=0.4020, confidence=80.41%
+2025-04-10 00:51:35,423 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:51:35,423 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:51:38,496 - INFO - Token usage: prompt=1038, completion=679, total=1717
+2025-04-10 00:51:38,497 - INFO - Agent workflow completed in 5.29s
+2025-04-10 00:51:38,497 - ERROR - Exception on /ask [POST]
+Traceback (most recent call last):
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\chedl\Downloads\Jo-main\Jo-main\try\app.py", line 991, in ask
+    <h4>{step['title']}</h4>
+         ~~~~^^^^^^^^^
+KeyError: 'title'
+2025-04-10 00:51:38,527 - INFO - 127.0.0.1 - - [10/Apr/2025 00:51:38] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2025-04-10 00:52:50,193 - INFO - 127.0.0.1 - - [10/Apr/2025 00:52:50] "GET / HTTP/1.1" 200 -
+2025-04-10 00:52:50,292 - INFO - 127.0.0.1 - - [10/Apr/2025 00:52:50] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:52:50,462 - INFO - 127.0.0.1 - - [10/Apr/2025 00:52:50] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:52:53,805 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:52:54,165 - INFO - Token usage: prompt=84, completion=8, total=92
+2025-04-10 00:52:54,175 - INFO - Processing query: 'can i cancel my contract at anytime?' for conversation 21
+2025-04-10 00:52:54,176 - INFO - Query received: can i cancel my contract at anytime?
+2025-04-10 00:52:54,557 - INFO - Search scores:
+Document 545 (chunk: chunk_517): score=0.5000, confidence=100.00%
+Document 872 (chunk: chunk_836): score=0.4787, confidence=95.73%
+Document 997 (chunk: chunk_950): score=0.4431, confidence=88.63%
+Document 659 (chunk: chunk_631): score=0.4125, confidence=82.50%
+Document 11 (chunk: chunk_11): score=0.4020, confidence=80.41%
+2025-04-10 00:52:54,566 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:52:54,566 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:52:57,488 - INFO - Token usage: prompt=1038, completion=716, total=1754
+2025-04-10 00:52:57,489 - INFO - Agent workflow completed in 3.68s
+2025-04-10 00:52:57,489 - ERROR - Exception on /ask [POST]
+Traceback (most recent call last):
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\chedl\Downloads\Jo-main\Jo-main\try\app.py", line 991, in ask
+    <h4>{step['title']}</h4>
+         ~~~~^^^^^^^^^
+KeyError: 'title'
+2025-04-10 00:52:57,490 - INFO - 127.0.0.1 - - [10/Apr/2025 00:52:57] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2025-04-10 00:53:09,553 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 00:53:09,595 - INFO - Use pytorch device_name: cuda
+2025-04-10 00:53:09,595 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 00:54:58,690 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 00:54:58,738 - INFO - Use pytorch device_name: cuda
+2025-04-10 00:54:58,739 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 00:55:03,597 - INFO - Loading pre-built indexes...
+2025-04-10 00:55:07,075 - INFO - Loaded 1460 legal document chunks
+2025-04-10 00:55:07,096 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-10 00:55:07,097 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 00:55:13,752 - INFO - 127.0.0.1 - - [10/Apr/2025 00:55:13] "GET / HTTP/1.1" 200 -
+2025-04-10 00:55:13,831 - INFO - 127.0.0.1 - - [10/Apr/2025 00:55:13] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 00:55:13,993 - INFO - 127.0.0.1 - - [10/Apr/2025 00:55:13] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 00:55:17,108 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:55:17,602 - INFO - Token usage: prompt=89, completion=12, total=101
+2025-04-10 00:55:17,612 - INFO - Processing query: 'What are my rights as an employee under Tunisian labor law?' for conversation 22
+2025-04-10 00:55:17,618 - INFO - Query received: What are my rights as an employee under Tunisian labor law?
+2025-04-10 00:55:19,120 - INFO - Search scores:
+Document 230 (chunk: chunk_219): score=0.5000, confidence=100.00%
+Document 206 (chunk: chunk_195): score=0.4609, confidence=92.17%
+Document 1397 (chunk: chunk_1340): score=0.4461, confidence=89.21%
+Document 872 (chunk: chunk_836): score=0.3726, confidence=74.53%
+Document 907 (chunk: chunk_869): score=0.3622, confidence=72.43%
+2025-04-10 00:55:19,123 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:55:19,123 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:55:21,073 - INFO - Token usage: prompt=925, completion=447, total=1372
+2025-04-10 00:55:21,074 - INFO - Agent workflow completed in 3.97s
+2025-04-10 00:55:21,087 - INFO - Request processed in 3.98s (thinking: 1.95s)
+2025-04-10 00:55:21,088 - INFO - 127.0.0.1 - - [10/Apr/2025 00:55:21] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:56:05,279 - INFO - 127.0.0.1 - - [10/Apr/2025 00:56:05] "GET /get_conversation/5 HTTP/1.1" 200 -
+2025-04-10 00:56:06,429 - INFO - 127.0.0.1 - - [10/Apr/2025 00:56:06] "GET /get_conversation/6 HTTP/1.1" 200 -
+2025-04-10 00:56:08,218 - INFO - 127.0.0.1 - - [10/Apr/2025 00:56:08] "GET /get_conversation/21 HTTP/1.1" 200 -
+2025-04-10 00:56:10,429 - INFO - 127.0.0.1 - - [10/Apr/2025 00:56:10] "GET /get_conversation/12 HTTP/1.1" 200 -
+2025-04-10 00:56:10,898 - INFO - 127.0.0.1 - - [10/Apr/2025 00:56:10] "GET /get_conversation/13 HTTP/1.1" 200 -
+2025-04-10 00:56:13,795 - INFO - 127.0.0.1 - - [10/Apr/2025 00:56:13] "GET /get_conversation/14 HTTP/1.1" 200 -
+2025-04-10 00:56:21,006 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 00:56:21,547 - INFO - Token usage: prompt=83, completion=9, total=92
+2025-04-10 00:56:21,557 - INFO - Processing query: 'can i fire anyone at anytime?' for conversation 23
+2025-04-10 00:56:21,558 - INFO - Query received: can i fire anyone at anytime?
+2025-04-10 00:56:21,962 - INFO - Search scores:
+Document 545 (chunk: chunk_517): score=0.5000, confidence=100.00%
+Document 1414 (chunk: chunk_1357): score=0.4463, confidence=89.25%
+Document 949 (chunk: chunk_904): score=0.4190, confidence=83.81%
+Document 659 (chunk: chunk_631): score=0.4125, confidence=82.50%
+Document 950 (chunk: chunk_905): score=0.4124, confidence=82.47%
+2025-04-10 00:56:21,968 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 00:56:21,968 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 00:56:23,047 - INFO - Token usage: prompt=976, completion=211, total=1187
+2025-04-10 00:56:23,048 - INFO - Agent workflow completed in 2.04s
+2025-04-10 00:56:23,061 - INFO - Request processed in 2.05s (thinking: 1.09s)
+2025-04-10 00:56:23,061 - INFO - 127.0.0.1 - - [10/Apr/2025 00:56:23] "POST /ask HTTP/1.1" 200 -
+2025-04-10 00:57:01,592 - INFO - 127.0.0.1 - - [10/Apr/2025 00:57:01] "DELETE /delete_conversation/21 HTTP/1.1" 200 -
+2025-04-10 00:57:03,053 - INFO - 127.0.0.1 - - [10/Apr/2025 00:57:03] "DELETE /delete_conversation/20 HTTP/1.1" 200 -
+2025-04-10 00:57:04,627 - INFO - 127.0.0.1 - - [10/Apr/2025 00:57:04] "DELETE /delete_conversation/19 HTTP/1.1" 200 -
+2025-04-10 00:57:05,317 - INFO - 127.0.0.1 - - [10/Apr/2025 00:57:05] "DELETE /delete_conversation/18 HTTP/1.1" 200 -
+2025-04-10 00:57:06,492 - INFO - 127.0.0.1 - - [10/Apr/2025 00:57:06] "DELETE /delete_conversation/17 HTTP/1.1" 200 -
+2025-04-10 00:57:10,389 - INFO - 127.0.0.1 - - [10/Apr/2025 00:57:10] "DELETE /delete_conversation/7 HTTP/1.1" 200 -
+2025-04-10 00:57:14,521 - INFO - 127.0.0.1 - - [10/Apr/2025 00:57:14] "DELETE /delete_conversation/8 HTTP/1.1" 200 -
+2025-04-10 00:57:15,532 - INFO - 127.0.0.1 - - [10/Apr/2025 00:57:15] "DELETE /delete_conversation/9 HTTP/1.1" 200 -
+2025-04-10 00:57:17,069 - INFO - 127.0.0.1 - - [10/Apr/2025 00:57:17] "DELETE /delete_conversation/10 HTTP/1.1" 200 -
+2025-04-10 00:57:17,896 - INFO - 127.0.0.1 - - [10/Apr/2025 00:57:17] "DELETE /delete_conversation/12 HTTP/1.1" 200 -
+2025-04-10 00:57:19,328 - INFO - 127.0.0.1 - - [10/Apr/2025 00:57:19] "DELETE /delete_conversation/13 HTTP/1.1" 200 -
+2025-04-10 00:57:24,443 - INFO - 127.0.0.1 - - [10/Apr/2025 00:57:24] "GET /get_conversation/6 HTTP/1.1" 200 -
+2025-04-10 00:58:41,404 - INFO - 127.0.0.1 - - [10/Apr/2025 00:58:41] "GET /get_conversation/23 HTTP/1.1" 200 -
+2025-04-10 00:58:45,079 - INFO - 127.0.0.1 - - [10/Apr/2025 00:58:45] "POST /search_conversations HTTP/1.1" 200 -
+2025-04-10 00:58:45,795 - INFO - 127.0.0.1 - - [10/Apr/2025 00:58:45] "POST /search_conversations HTTP/1.1" 200 -
+2025-04-10 00:58:47,191 - INFO - 127.0.0.1 - - [10/Apr/2025 00:58:47] "POST /search_conversations HTTP/1.1" 200 -
+2025-04-10 00:58:48,887 - INFO - 127.0.0.1 - - [10/Apr/2025 00:58:48] "POST /search_conversations HTTP/1.1" 200 -
+2025-04-10 00:58:50,116 - INFO - 127.0.0.1 - - [10/Apr/2025 00:58:50] "POST /search_conversations HTTP/1.1" 200 -
+2025-04-10 00:58:55,126 - INFO - 127.0.0.1 - - [10/Apr/2025 00:58:55] "POST /search_conversations HTTP/1.1" 200 -
+2025-04-10 00:58:55,391 - INFO - 127.0.0.1 - - [10/Apr/2025 00:58:55] "POST /search_conversations HTTP/1.1" 200 -
+2025-04-10 01:02:34,810 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 01:02:34,839 - INFO - Use pytorch device_name: cuda
+2025-04-10 01:02:34,839 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 01:02:42,865 - INFO - Loading pre-built indexes...
+2025-04-10 01:02:46,286 - INFO - Loaded 1460 legal document chunks
+2025-04-10 01:02:46,304 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-10 01:02:46,304 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 01:02:47,994 - INFO - 127.0.0.1 - - [10/Apr/2025 01:02:47] "GET / HTTP/1.1" 200 -
+2025-04-10 01:02:48,087 - INFO - 127.0.0.1 - - [10/Apr/2025 01:02:48] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 01:02:48,238 - INFO - 127.0.0.1 - - [10/Apr/2025 01:02:48] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 01:03:01,645 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 01:03:02,360 - INFO - Token usage: prompt=83, completion=7, total=90
+2025-04-10 01:03:02,370 - INFO - Processing query: 'how much money i can ask' for conversation 24
+2025-04-10 01:03:02,377 - INFO - Query received: how much money i can ask
+2025-04-10 01:03:03,693 - INFO - Search scores:
+Document 1317 (chunk: chunk_1260): score=0.5000, confidence=100.00%
+Document 545 (chunk: chunk_517): score=0.3474, confidence=69.48%
+Document 767 (chunk: chunk_735): score=0.3104, confidence=62.07%
+Document 945 (chunk: chunk_900): score=0.2899, confidence=57.98%
+Document 1352 (chunk: chunk_1295): score=0.2816, confidence=56.32%
+2025-04-10 01:03:03,696 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 01:03:03,696 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 01:03:05,649 - INFO - Token usage: prompt=909, completion=441, total=1350
+2025-04-10 01:03:05,650 - INFO - Agent workflow completed in 4.01s
+2025-04-10 01:03:05,663 - INFO - Request processed in 4.02s (thinking: 1.96s)
+2025-04-10 01:03:05,664 - INFO - 127.0.0.1 - - [10/Apr/2025 01:03:05] "POST /ask HTTP/1.1" 200 -
+2025-04-10 01:05:03,538 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 01:05:03,571 - INFO - Use pytorch device_name: cuda
+2025-04-10 01:05:03,571 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 01:05:09,280 - INFO - Loading pre-built indexes...
+2025-04-10 01:05:12,305 - INFO - Loaded 1460 legal document chunks
+2025-04-10 01:05:12,318 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-10 01:05:12,318 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 01:05:20,480 - INFO - 127.0.0.1 - - [10/Apr/2025 01:05:20] "GET / HTTP/1.1" 200 -
+2025-04-10 01:05:20,592 - INFO - 127.0.0.1 - - [10/Apr/2025 01:05:20] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 01:05:20,740 - INFO - 127.0.0.1 - - [10/Apr/2025 01:05:20] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 01:05:35,838 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 01:05:35,870 - INFO - Use pytorch device_name: cuda
+2025-04-10 01:05:35,871 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 01:05:42,460 - INFO - Loading pre-built indexes...
+2025-04-10 01:05:45,459 - INFO - Loaded 1460 legal document chunks
+2025-04-10 01:05:45,475 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-10 01:05:45,475 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 01:05:48,342 - INFO - 127.0.0.1 - - [10/Apr/2025 01:05:48] "GET / HTTP/1.1" 200 -
+2025-04-10 01:05:48,424 - INFO - 127.0.0.1 - - [10/Apr/2025 01:05:48] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 01:05:48,560 - INFO - 127.0.0.1 - - [10/Apr/2025 01:05:48] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 01:06:01,072 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 01:06:01,570 - INFO - Token usage: prompt=83, completion=7, total=90
+2025-04-10 01:06:01,578 - INFO - Processing query: 'asalamou alaykom' for conversation 25
+2025-04-10 01:06:01,585 - INFO - Query received: asalamou alaykom
+2025-04-10 01:06:02,898 - INFO - Search scores:
+Document 942 (chunk: chunk_897): score=0.2642, confidence=100.00%
+Document 441 (chunk: chunk_415): score=0.2627, confidence=99.43%
+Document 545 (chunk: chunk_517): score=0.2606, confidence=98.65%
+Document 936 (chunk: chunk_891): score=0.2583, confidence=97.77%
+Document 937 (chunk: chunk_892): score=0.2581, confidence=97.69%
+2025-04-10 01:06:02,909 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 01:06:02,909 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 01:06:04,112 - INFO - Token usage: prompt=851, completion=238, total=1089
+2025-04-10 01:06:04,113 - INFO - Agent workflow completed in 3.04s
+2025-04-10 01:06:04,129 - INFO - Request processed in 3.06s (thinking: 1.21s)
+2025-04-10 01:06:04,130 - INFO - 127.0.0.1 - - [10/Apr/2025 01:06:04] "POST /ask HTTP/1.1" 200 -
+2025-04-10 01:07:22,205 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 01:07:22,699 - INFO - Token usage: prompt=111, completion=15, total=126
+2025-04-10 01:07:22,719 - INFO - Processing query: '\u0671\u0644\u0633\u064e\u0651\u0644\u064e\u0627\u0645\u064f \u0639\u064e\u0644\u064e\u064a\u0652\u0643\u064f\u0645\u0652 \u0648\u064e\u0631\u064e\u062d\u0652\u0645\u064e\u0629\u064f \u0671\u0644\u0644\u0647\u0650 \u0648\u064e\u0628\u064e\u0631\u064e\u0643\u064e\u0627\u062a\u064f\u0647\u064f' for conversation 26
+2025-04-10 01:07:22,721 - INFO - Query received: \u0671\u0644\u0633\u064e\u0651\u0644\u064e\u0627\u0645\u064f \u0639\u064e\u0644\u064e\u064a\u0652\u0643\u064f\u0645\u0652 \u0648\u064e\u0631\u064e\u062d\u0652\u0645\u064e\u0629\u064f \u0671\u0644\u0644\u0647\u0650 \u0648\u064e\u0628\u064e\u0631\u064e\u0643\u064e\u0627\u062a\u064f\u0647\u064f
+2025-04-10 01:07:42,722 - INFO - Search scores:
+Document 351 (chunk: chunk_332): score=0.5000, confidence=100.00%
+Document 832 (chunk: chunk_798): score=0.4828, confidence=96.57%
+Document 829 (chunk: chunk_795): score=0.4822, confidence=96.44%
+Document 1265 (chunk: chunk_1208): score=0.4819, confidence=96.39%
+Document 794 (chunk: chunk_762): score=0.4769, confidence=95.38%
+2025-04-10 01:07:42,724 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 01:07:42,724 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 01:07:44,648 - INFO - Token usage: prompt=1355, completion=237, total=1592
+2025-04-10 01:07:44,648 - INFO - Agent workflow completed in 22.44s
+2025-04-10 01:07:44,656 - INFO - Request processed in 22.45s (thinking: 1.93s)
+2025-04-10 01:07:44,657 - INFO - 127.0.0.1 - - [10/Apr/2025 01:07:44] "POST /ask HTTP/1.1" 200 -
+2025-04-10 01:08:37,411 - INFO - Processing query: '\u0645\u0646 \u0623\u0646\u062a' for conversation 26
+2025-04-10 01:08:37,413 - INFO - Query received: \u0645\u0646 \u0623\u0646\u062a
+2025-04-10 01:08:54,526 - INFO - Search scores:
+Document 95 (chunk: chunk_91_sub_2): score=0.2242, confidence=100.00%
+Document 517 (chunk: chunk_489): score=0.2242, confidence=99.98%
+Document 18 (chunk: chunk_18): score=0.2224, confidence=99.19%
+Document 798 (chunk: chunk_764): score=0.2203, confidence=98.27%
+Document 504 (chunk: chunk_476): score=0.2198, confidence=98.04%
+2025-04-10 01:08:54,528 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 01:08:54,528 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 01:08:56,825 - INFO - Token usage: prompt=846, completion=537, total=1383
+2025-04-10 01:08:56,826 - INFO - Agent workflow completed in 19.42s
+2025-04-10 01:08:56,831 - INFO - Request processed in 19.43s (thinking: 2.30s)
+2025-04-10 01:08:56,831 - INFO - 127.0.0.1 - - [10/Apr/2025 01:08:56] "POST /ask HTTP/1.1" 200 -
+2025-04-10 09:01:13,231 - INFO - 127.0.0.1 - - [10/Apr/2025 09:01:13] "GET /get_conversation/23 HTTP/1.1" 200 -
+2025-04-10 09:01:15,716 - INFO - 127.0.0.1 - - [10/Apr/2025 09:01:15] "GET /get_conversation/22 HTTP/1.1" 200 -
+2025-04-10 09:01:56,860 - INFO - 127.0.0.1 - - [10/Apr/2025 09:01:56] "GET / HTTP/1.1" 200 -
+2025-04-10 09:01:57,247 - INFO - 127.0.0.1 - - [10/Apr/2025 09:01:57] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 09:01:57,460 - INFO - 127.0.0.1 - - [10/Apr/2025 09:01:57] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 09:18:35,911 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-10 09:18:35,956 - INFO - Use pytorch device_name: cuda
+2025-04-10 09:18:35,956 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-10 09:18:42,901 - INFO - Loading pre-built indexes...
+2025-04-10 09:18:46,376 - INFO - Loaded 1460 legal document chunks
+2025-04-10 09:18:47,654 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.1.59:5000
+2025-04-10 09:18:47,654 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 09:18:48,625 - INFO - 127.0.0.1 - - [10/Apr/2025 09:18:48] "GET / HTTP/1.1" 200 -
+2025-04-10 09:18:48,891 - INFO - 127.0.0.1 - - [10/Apr/2025 09:18:48] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 09:18:49,341 - INFO - 127.0.0.1 - - [10/Apr/2025 09:18:49] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 09:18:52,159 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 09:18:52,786 - INFO - Token usage: prompt=98, completion=22, total=120
+2025-04-10 09:18:52,796 - INFO - Processing query: 'Quelles sont les exigences légales et réglementaires pour la création d’une entreprise en Tunisie ?' for conversation 27
+2025-04-10 09:18:52,819 - INFO - Query received: Quelles sont les exigences légales et réglementaires pour la création d’une entreprise en Tunisie ?
+2025-04-10 09:18:54,149 - INFO - Search scores:
+Document 269 (chunk: chunk_256): score=0.5585, confidence=100.00%
+Document 877 (chunk: chunk_841): score=0.5000, confidence=89.53%
+Document 474 (chunk: chunk_446_sub_2): score=0.4821, confidence=86.33%
+Document 472 (chunk: chunk_446): score=0.4612, confidence=82.59%
+Document 1144 (chunk: chunk_1093): score=0.4329, confidence=77.51%
+2025-04-10 09:18:54,152 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 09:18:54,152 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 09:19:04,502 - INFO - 127.0.0.1 - - [10/Apr/2025 09:19:04] "GET / HTTP/1.1" 200 -
+2025-04-10 09:19:04,940 - INFO - 127.0.0.1 - - [10/Apr/2025 09:19:04] "GET / HTTP/1.1" 200 -
+2025-04-10 09:19:05,128 - INFO - 127.0.0.1 - - [10/Apr/2025 09:19:05] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 09:19:05,595 - INFO - 127.0.0.1 - - [10/Apr/2025 09:19:05] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 09:19:20,069 - INFO - Token usage: prompt=1373, completion=818, total=2191
+2025-04-10 09:19:20,072 - INFO - Agent workflow completed in 27.91s
+2025-04-10 09:19:20,087 - INFO - Request processed in 27.93s (thinking: 25.92s)
+2025-04-10 09:19:20,088 - INFO - 127.0.0.1 - - [10/Apr/2025 09:19:20] "POST /ask HTTP/1.1" 200 -
+2025-04-10 09:19:31,344 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 09:19:31,999 - INFO - Token usage: prompt=87, completion=51, total=138
+2025-04-10 09:19:32,011 - INFO - Processing query: 'What are the requirements for starting a business in Tunisia?' for conversation 28
+2025-04-10 09:19:32,012 - INFO - Query received: What are the requirements for starting a business in Tunisia?
+2025-04-10 09:19:32,387 - INFO - Search scores:
+Document 473 (chunk: chunk_446_sub_1): score=0.6039, confidence=100.00%
+Document 701 (chunk: chunk_669): score=0.5000, confidence=82.80%
+Document 269 (chunk: chunk_256): score=0.4578, confidence=75.81%
+Document 877 (chunk: chunk_841): score=0.4505, confidence=74.60%
+Document 472 (chunk: chunk_446): score=0.4452, confidence=73.72%
+2025-04-10 09:19:32,391 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 09:19:32,392 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 09:19:43,958 - INFO - Token usage: prompt=1162, completion=483, total=1645
+2025-04-10 09:19:43,959 - INFO - Agent workflow completed in 12.62s
+2025-04-10 09:19:43,968 - INFO - Request processed in 12.62s (thinking: 11.57s)
+2025-04-10 09:19:43,969 - INFO - 127.0.0.1 - - [10/Apr/2025 09:19:43] "POST /ask HTTP/1.1" 200 -
+2025-04-10 09:20:30,000 - INFO - 127.0.0.1 - - [10/Apr/2025 09:20:30] "GET / HTTP/1.1" 200 -
+2025-04-10 09:20:30,305 - INFO - 127.0.0.1 - - [10/Apr/2025 09:20:30] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-10 09:20:30,648 - INFO - 127.0.0.1 - - [10/Apr/2025 09:20:30] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-10 09:20:32,779 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-10 09:20:33,301 - INFO - Token usage: prompt=92, completion=38, total=130
+2025-04-10 09:20:33,311 - INFO - Processing query: 'Quelles sont les exigences pour démarrer une entreprise en Tunisie ?' for conversation 29
+2025-04-10 09:20:33,312 - INFO - Query received: Quelles sont les exigences pour démarrer une entreprise en Tunisie ?
+2025-04-10 09:20:33,344 - INFO - Search scores:
+Document 269 (chunk: chunk_256): score=0.6655, confidence=100.00%
+Document 877 (chunk: chunk_841): score=0.4920, confidence=73.94%
+Document 472 (chunk: chunk_446): score=0.4863, confidence=73.07%
+Document 473 (chunk: chunk_446_sub_1): score=0.4822, confidence=72.47%
+Document 474 (chunk: chunk_446_sub_2): score=0.4791, confidence=71.99%
+2025-04-10 09:20:33,347 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-10 09:20:33,347 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-10 09:20:43,732 - INFO - Token usage: prompt=1357, completion=528, total=1885
+2025-04-10 09:20:43,735 - INFO - Agent workflow completed in 10.96s
+2025-04-10 09:20:43,744 - INFO - Request processed in 10.96s (thinking: 10.39s)
+2025-04-10 09:20:43,745 - INFO - 127.0.0.1 - - [10/Apr/2025 09:20:43] "POST /ask HTTP/1.1" 200 -
+2025-04-14 21:12:40,037 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-14 21:12:40,075 - INFO - Use pytorch device_name: cuda
+2025-04-14 21:12:40,075 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-14 21:12:46,438 - INFO - Loading pre-built indexes...
+2025-04-14 21:12:50,116 - INFO - Loaded 1460 legal document chunks
+2025-04-14 21:12:50,154 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-14 21:12:50,154 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-14 21:13:16,936 - INFO - 127.0.0.1 - - [14/Apr/2025 21:13:16] "GET / HTTP/1.1" 200 -
+2025-04-14 21:13:17,212 - INFO - 127.0.0.1 - - [14/Apr/2025 21:13:17] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-14 21:13:17,642 - INFO - 127.0.0.1 - - [14/Apr/2025 21:13:17] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-14 21:13:20,734 - INFO - 127.0.0.1 - - [14/Apr/2025 21:13:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-14 21:15:41,603 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-14 21:15:41,819 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions (Status code: 400)
+2025-04-14 21:15:41,819 - ERROR - Error generating title: Bad request to Groq API: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2025-04-14 21:15:41,829 - INFO - Processing query: 'Est-ce qu’un adolescent de 17 ans peut signer un contrat sans ses parents ?' for conversation 30
+2025-04-14 21:15:41,858 - INFO - Query received: Est-ce qu’un adolescent de 17 ans peut signer un contrat sans ses parents ?
+2025-04-14 21:15:43,683 - INFO - Search scores:
+Document 16 (chunk: chunk_16): score=0.5500, confidence=100.00%
+Document 870 (chunk: chunk_834): score=0.5161, confidence=93.83%
+Document 840 (chunk: chunk_806): score=0.5054, confidence=91.89%
+Document 1409 (chunk: chunk_1352): score=0.5023, confidence=91.33%
+Document 1076 (chunk: chunk_1027): score=0.4641, confidence=84.38%
+2025-04-14 21:15:43,692 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-14 21:15:43,692 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-14 21:15:48,389 - INFO - Token usage: prompt=1141, completion=766, total=1907
+2025-04-14 21:15:48,392 - INFO - Agent workflow completed in 6.79s
+2025-04-14 21:15:48,410 - INFO - Request processed in 6.81s (thinking: 4.71s)
+2025-04-14 21:15:48,411 - INFO - 127.0.0.1 - - [14/Apr/2025 21:15:48] "POST /ask HTTP/1.1" 200 -
+2025-04-14 21:17:20,484 - INFO - Processing query: 'Quelle est la portée juridique de la capacité contractuelle d’un mineur de plus de treize ans mais de moins de vingt ans non assisté par son représentant légal, ?' for conversation 30
+2025-04-14 21:17:20,485 - INFO - Query received: Quelle est la portée juridique de la capacité contractuelle d’un mineur de plus de treize ans mais de moins de vingt ans non assisté par son représentant légal, ?
+2025-04-14 21:17:20,528 - INFO - Search scores:
+Document 407 (chunk: chunk_388): score=0.5560, confidence=100.00%
+Document 5 (chunk: chunk_5): score=0.4890, confidence=87.96%
+Document 4 (chunk: chunk_4): score=0.4061, confidence=73.04%
+Document 349 (chunk: chunk_330): score=0.4020, confidence=72.31%
+Document 265 (chunk: chunk_252): score=0.3992, confidence=71.80%
+2025-04-14 21:17:20,532 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-14 21:17:20,532 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-14 21:17:24,359 - INFO - Token usage: prompt=1023, completion=909, total=1932
+2025-04-14 21:17:24,362 - INFO - Agent workflow completed in 3.89s
+2025-04-14 21:17:24,383 - INFO - Request processed in 3.91s (thinking: 3.83s)
+2025-04-14 21:17:24,383 - INFO - 127.0.0.1 - - [14/Apr/2025 21:17:24] "POST /ask HTTP/1.1" 200 -
+2025-04-14 21:18:52,224 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-14 21:18:52,388 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions (Status code: 400)
+2025-04-14 21:18:52,388 - ERROR - Error generating title: Bad request to Groq API: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2025-04-14 21:18:52,397 - INFO - Processing query: 'Si je me suis trompé en signant, est-ce que je peux annuler le contrat ?' for conversation 31
+2025-04-14 21:18:52,399 - INFO - Query received: Si je me suis trompé en signant, est-ce que je peux annuler le contrat ?
+2025-04-14 21:18:52,432 - INFO - Search scores:
+Document 545 (chunk: chunk_517): score=0.5000, confidence=100.00%
+Document 1308 (chunk: chunk_1251): score=0.4785, confidence=95.70%
+Document 872 (chunk: chunk_836): score=0.4417, confidence=88.33%
+Document 997 (chunk: chunk_950): score=0.3825, confidence=76.51%
+Document 1114 (chunk: chunk_1063): score=0.3802, confidence=76.05%
+2025-04-14 21:18:52,436 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-14 21:18:52,436 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-14 21:18:55,625 - INFO - Token usage: prompt=1314, completion=779, total=2093
+2025-04-14 21:18:55,627 - INFO - Agent workflow completed in 3.40s
+2025-04-14 21:18:55,648 - INFO - Request processed in 3.42s (thinking: 3.19s)
+2025-04-14 21:18:55,648 - INFO - 127.0.0.1 - - [14/Apr/2025 21:18:55] "POST /ask HTTP/1.1" 200 -
+2025-04-14 21:19:23,215 - INFO - Processing query: 'Dans quelles hypothèses l’erreur constitue-t-elle un vice du consentement justifiant la nullité d’un contrat ?' for conversation 31
+2025-04-14 21:19:23,216 - INFO - Query received: Dans quelles hypothèses l’erreur constitue-t-elle un vice du consentement justifiant la nullité d’un contrat ?
+2025-04-14 21:19:23,254 - INFO - Search scores:
+Document 44 (chunk: chunk_44): score=0.5000, confidence=100.00%
+Document 342 (chunk: chunk_323): score=0.4749, confidence=94.97%
+Document 692 (chunk: chunk_660): score=0.4468, confidence=89.36%
+Document 411 (chunk: chunk_392): score=0.4266, confidence=85.32%
+Document 45 (chunk: chunk_45): score=0.4117, confidence=82.35%
+2025-04-14 21:19:23,258 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-14 21:19:23,258 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-14 21:19:26,394 - INFO - Token usage: prompt=1194, completion=730, total=1924
+2025-04-14 21:19:26,396 - INFO - Agent workflow completed in 3.19s
+2025-04-14 21:19:26,416 - INFO - Request processed in 3.21s (thinking: 3.14s)
+2025-04-14 21:19:26,416 - INFO - 127.0.0.1 - - [14/Apr/2025 21:19:26] "POST /ask HTTP/1.1" 200 -
+2025-04-14 21:23:39,663 - INFO - 127.0.0.1 - - [14/Apr/2025 21:23:39] "GET / HTTP/1.1" 200 -
+2025-04-14 21:23:39,743 - INFO - 127.0.0.1 - - [14/Apr/2025 21:23:39] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-14 21:23:39,922 - INFO - 127.0.0.1 - - [14/Apr/2025 21:23:39] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-14 21:23:52,905 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-14 21:23:53,091 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions (Status code: 400)
+2025-04-14 21:23:53,091 - ERROR - Error generating title: Bad request to Groq API: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2025-04-14 21:23:53,100 - INFO - Processing query: 'Si quelqu’un me cause un dommage, il est obligé de me rembourser ?' for conversation 32
+2025-04-14 21:23:53,101 - INFO - Query received: Si quelqu’un me cause un dommage, il est obligé de me rembourser ?
+2025-04-14 21:23:53,134 - INFO - Search scores:
+Document 81 (chunk: chunk_81): score=0.5000, confidence=100.00%
+Document 792 (chunk: chunk_760): score=0.4617, confidence=92.34%
+Document 103 (chunk: chunk_96): score=0.4454, confidence=89.08%
+Document 82 (chunk: chunk_82): score=0.4364, confidence=87.29%
+Document 184 (chunk: chunk_173): score=0.4345, confidence=86.90%
+2025-04-14 21:23:53,137 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-14 21:23:53,137 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-14 21:23:56,819 - INFO - Token usage: prompt=1201, completion=911, total=2112
+2025-04-14 21:23:56,821 - INFO - Agent workflow completed in 3.92s
+2025-04-14 21:23:56,846 - INFO - Request processed in 3.94s (thinking: 3.69s)
+2025-04-14 21:23:56,847 - INFO - 127.0.0.1 - - [14/Apr/2025 21:23:56] "POST /ask HTTP/1.1" 200 -
+2025-04-14 21:26:20,836 - INFO - Processing query: 'Quels sont les fondements de la responsabilité civile extracontractuelle en cas de dommage causé volontairement ou par négligence ?' for conversation 32
+2025-04-14 21:26:20,837 - INFO - Query received: Quels sont les fondements de la responsabilité civile extracontractuelle en cas de dommage causé volontairement ou par négligence ?
+2025-04-14 21:26:20,874 - INFO - Search scores:
+Document 113 (chunk: chunk_104): score=0.7340, confidence=100.00%
+Document 112 (chunk: chunk_103): score=0.7141, confidence=97.30%
+Document 111 (chunk: chunk_102): score=0.6840, confidence=93.20%
+Document 104 (chunk: chunk_97): score=0.5791, confidence=78.90%
+Document 99 (chunk: chunk_93_sub_2): score=0.5140, confidence=70.04%
+2025-04-14 21:26:20,878 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-14 21:26:20,878 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-14 21:26:25,080 - INFO - Token usage: prompt=1408, completion=1051, total=2459
+2025-04-14 21:26:25,082 - INFO - Agent workflow completed in 4.25s
+2025-04-14 21:26:25,112 - INFO - Request processed in 4.28s (thinking: 4.21s)
+2025-04-14 21:26:25,113 - INFO - 127.0.0.1 - - [14/Apr/2025 21:26:25] "POST /ask HTTP/1.1" 200 -
+2025-04-14 21:36:25,042 - INFO - 127.0.0.1 - - [14/Apr/2025 21:36:25] "GET / HTTP/1.1" 200 -
+2025-04-14 21:36:25,112 - INFO - 127.0.0.1 - - [14/Apr/2025 21:36:25] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-14 21:36:25,299 - INFO - 127.0.0.1 - - [14/Apr/2025 21:36:25] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-14 21:38:24,829 - INFO - 127.0.0.1 - - [14/Apr/2025 21:38:24] "GET / HTTP/1.1" 200 -
+2025-04-14 21:38:24,907 - INFO - 127.0.0.1 - - [14/Apr/2025 21:38:24] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-14 21:38:25,080 - INFO - 127.0.0.1 - - [14/Apr/2025 21:38:25] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-14 21:38:51,655 - INFO - Sending request to Groq API: model=llama-3.2-1b-preview, temperature=0.7, max_tokens=1000
+2025-04-14 21:38:51,840 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions (Status code: 400)
+2025-04-14 21:38:51,840 - ERROR - Error generating title: Bad request to Groq API: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+2025-04-14 21:38:51,850 - INFO - Processing query: 'Est-ce qu’on peut faire un contrat sur n’importe quoi ?' for conversation 33
+2025-04-14 21:38:51,852 - INFO - Query received: Est-ce qu’on peut faire un contrat sur n’importe quoi ?
+2025-04-14 21:38:51,887 - INFO - Search scores:
+Document 1294 (chunk: chunk_1237): score=0.5415, confidence=100.00%
+Document 82 (chunk: chunk_82): score=0.5000, confidence=92.34%
+Document 902 (chunk: chunk_864): score=0.4866, confidence=89.86%
+Document 755 (chunk: chunk_723): score=0.4749, confidence=87.71%
+Document 22 (chunk: chunk_22): score=0.4571, confidence=84.42%
+2025-04-14 21:38:51,891 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-14 21:38:51,891 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-14 21:38:56,484 - INFO - Token usage: prompt=1293, completion=1088, total=2381
+2025-04-14 21:38:56,486 - INFO - Agent workflow completed in 4.83s
+2025-04-14 21:38:56,527 - INFO - Request processed in 4.87s (thinking: 4.60s)
+2025-04-14 21:38:56,527 - INFO - 127.0.0.1 - - [14/Apr/2025 21:38:56] "POST /ask HTTP/1.1" 200 -
+2025-04-14 21:39:06,664 - INFO - Processing query: 'L’objet et la cause d’une obligation doivent-ils répondre à des critères de licéité et de possibilité ? Quels sont les effets d’une cause illicite ?' for conversation 33
+2025-04-14 21:39:06,665 - INFO - Query received: L’objet et la cause d’une obligation doivent-ils répondre à des critères de licéité et de possibilité ? Quels sont les effets d’une cause illicite ?
+2025-04-14 21:39:06,704 - INFO - Search scores:
+Document 66 (chunk: chunk_66): score=0.5545, confidence=100.00%
+Document 1 (chunk: chunk_1): score=0.5243, confidence=94.54%
+Document 250 (chunk: chunk_237): score=0.5159, confidence=93.03%
+Document 654 (chunk: chunk_626): score=0.5082, confidence=91.64%
+Document 506 (chunk: chunk_478): score=0.5000, confidence=90.16%
+2025-04-14 21:39:06,707 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-14 21:39:06,708 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-14 21:39:10,223 - INFO - Token usage: prompt=1321, completion=867, total=2188
+2025-04-14 21:39:10,225 - INFO - Agent workflow completed in 3.57s
+2025-04-14 21:39:10,249 - INFO - Request processed in 3.59s (thinking: 3.52s)
+2025-04-14 21:39:10,249 - INFO - 127.0.0.1 - - [14/Apr/2025 21:39:10] "POST /ask HTTP/1.1" 200 -
+2025-04-15 10:45:10,924 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-15 10:45:10,966 - INFO - Use pytorch device_name: cuda
+2025-04-15 10:45:10,966 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-15 10:45:51,439 - INFO - Loading pre-built indexes...
+2025-04-15 10:45:56,239 - INFO - Loaded 1460 legal document chunks
+2025-04-15 10:45:56,275 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-04-15 10:45:56,275 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-15 10:46:44,045 - INFO - 127.0.0.1 - - [15/Apr/2025 10:46:44] "[33mGET /chapters/document/4 HTTP/1.1[0m" 404 -
+2025-04-15 10:46:45,584 - INFO - 127.0.0.1 - - [15/Apr/2025 10:46:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-15 10:46:46,182 - INFO - 127.0.0.1 - - [15/Apr/2025 10:46:46] "GET / HTTP/1.1" 200 -
+2025-04-15 10:46:46,783 - INFO - 127.0.0.1 - - [15/Apr/2025 10:46:46] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-15 10:46:47,327 - INFO - 127.0.0.1 - - [15/Apr/2025 10:46:47] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-15 10:46:52,957 - INFO - 127.0.0.1 - - [15/Apr/2025 10:46:52] "DELETE /delete_conversation/33 HTTP/1.1" 200 -
+2025-04-15 10:46:55,339 - INFO - 127.0.0.1 - - [15/Apr/2025 10:46:55] "DELETE /delete_conversation/32 HTTP/1.1" 200 -
+2025-04-15 10:46:56,656 - INFO - 127.0.0.1 - - [15/Apr/2025 10:46:56] "GET /get_conversation/31 HTTP/1.1" 200 -
+2025-04-15 10:47:03,014 - INFO - 127.0.0.1 - - [15/Apr/2025 10:47:03] "GET / HTTP/1.1" 200 -
+2025-04-15 10:47:03,558 - INFO - 127.0.0.1 - - [15/Apr/2025 10:47:03] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-15 10:47:03,822 - INFO - 127.0.0.1 - - [15/Apr/2025 10:47:03] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-15 10:47:06,623 - INFO - Sending request to Groq API: model=gemma2-9b-it, temperature=0.7, max_tokens=1000
+2025-04-15 10:47:07,185 - INFO - Token usage: prompt=76, completion=10, total=86
+2025-04-15 10:47:07,199 - INFO - Processing query: 'Dans quelles hypothèses l’erreur constitue-t-elle un vice du consentement justifiant la nullité d’un contrat ?' for conversation 34
+2025-04-15 10:47:07,227 - INFO - Query received: Dans quelles hypothèses l’erreur constitue-t-elle un vice du consentement justifiant la nullité d’un contrat ?
+2025-04-15 10:47:09,412 - INFO - Search scores:
+Document 44 (chunk: chunk_44): score=0.5000, confidence=100.00%
+Document 342 (chunk: chunk_323): score=0.4749, confidence=94.97%
+Document 692 (chunk: chunk_660): score=0.4468, confidence=89.36%
+Document 411 (chunk: chunk_392): score=0.4266, confidence=85.32%
+Document 45 (chunk: chunk_45): score=0.4117, confidence=82.35%
+2025-04-15 10:47:09,418 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-04-15 10:47:09,418 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-04-15 10:47:11,913 - INFO - Token usage: prompt=1194, completion=606, total=1800
+2025-04-15 10:47:11,917 - INFO - Agent workflow completed in 5.29s
+2025-04-15 10:47:11,937 - INFO - Request processed in 5.31s (thinking: 2.50s)
+2025-04-15 10:47:11,938 - INFO - 127.0.0.1 - - [15/Apr/2025 10:47:11] "POST /ask HTTP/1.1" 200 -
+2025-04-15 10:50:20,520 - INFO - 127.0.0.1 - - [15/Apr/2025 10:50:20] "GET / HTTP/1.1" 200 -
+2025-04-15 10:50:20,598 - INFO - 127.0.0.1 - - [15/Apr/2025 10:50:20] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-15 10:50:20,776 - INFO - 127.0.0.1 - - [15/Apr/2025 10:50:20] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-21 16:43:27,030 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-21 16:43:27,060 - INFO - Use pytorch device_name: cuda
+2025-04-21 16:43:27,060 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-21 16:43:45,680 - INFO - Loading pre-built indexes...
+2025-04-21 16:43:49,212 - INFO - Loaded 1460 legal document chunks
+2025-04-21 16:44:01,528 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.139.177:5000
+2025-04-21 16:44:01,528 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-21 16:44:01,856 - INFO - 127.0.0.1 - - [21/Apr/2025 16:44:01] "GET / HTTP/1.1" 200 -
+2025-04-21 16:44:02,088 - INFO - 127.0.0.1 - - [21/Apr/2025 16:44:02] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-21 16:44:08,812 - INFO - 127.0.0.1 - - [21/Apr/2025 16:44:08] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-22 09:45:07,686 - WARNING - Config file config.yaml not found, using defaults.
+2025-04-22 09:45:07,702 - INFO - Use pytorch device_name: cuda
+2025-04-22 09:45:07,702 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-22 09:45:15,267 - INFO - Loading pre-built indexes...
+2025-04-22 09:45:18,498 - INFO - Loaded 1460 legal document chunks
+2025-04-22 09:45:19,964 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.59.76:5000
+2025-04-22 09:45:19,964 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-22 09:45:34,757 - INFO - 127.0.0.1 - - [22/Apr/2025 09:45:34] "GET / HTTP/1.1" 200 -
+2025-04-22 09:45:34,766 - INFO - 127.0.0.1 - - [22/Apr/2025 09:45:34] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-22 09:45:35,195 - INFO - 127.0.0.1 - - [22/Apr/2025 09:45:35] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-22 09:45:42,258 - INFO - 127.0.0.1 - - [22/Apr/2025 09:45:42] "GET /get_conversation/34 HTTP/1.1" 200 -
+2025-04-22 09:45:42,514 - INFO - 127.0.0.1 - - [22/Apr/2025 09:45:42] "GET /get_conversation/34 HTTP/1.1" 200 -
+2025-04-22 09:45:54,035 - INFO - 127.0.0.1 - - [22/Apr/2025 09:45:54] "GET /get_conversation/31 HTTP/1.1" 200 -
+2025-04-22 09:45:55,297 - INFO - 127.0.0.1 - - [22/Apr/2025 09:45:55] "GET /get_conversation/34 HTTP/1.1" 200 -
+2025-04-22 09:54:13,154 - INFO - 127.0.0.1 - - [22/Apr/2025 09:54:13] "GET / HTTP/1.1" 200 -
+2025-04-22 09:54:13,162 - INFO - 127.0.0.1 - - [22/Apr/2025 09:54:13] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-04-22 09:54:13,423 - INFO - 127.0.0.1 - - [22/Apr/2025 09:54:13] "GET /get_conversations HTTP/1.1" 200 -
+2025-04-22 09:54:13,497 - INFO - 127.0.0.1 - - [22/Apr/2025 09:54:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-22 09:54:15,006 - INFO - 127.0.0.1 - - [22/Apr/2025 09:54:15] "GET /get_conversation/29 HTTP/1.1" 200 -
+2025-04-22 09:54:16,026 - INFO - 127.0.0.1 - - [22/Apr/2025 09:54:16] "GET /get_conversation/30 HTTP/1.1" 200 -
+2025-05-05 20:41:12,171 - INFO - Use pytorch device_name: cpu
+2025-05-05 20:41:12,480 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-05 20:59:40,187 - INFO - Loading pre-built indexes...
+2025-05-05 20:59:44,317 - INFO - Loaded 1460 legal document chunks
+2025-05-05 20:59:44,349 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.22:5000
+2025-05-05 20:59:44,349 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-05 21:03:49,749 - INFO - 127.0.0.1 - - [05/May/2025 21:03:49] "GET / HTTP/1.1" 200 -
+2025-05-05 21:03:49,767 - INFO - 127.0.0.1 - - [05/May/2025 21:03:49] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-05-05 21:03:51,275 - INFO - 127.0.0.1 - - [05/May/2025 21:03:51] "GET /get_conversations HTTP/1.1" 200 -
+2025-05-05 21:03:51,595 - INFO - 127.0.0.1 - - [05/May/2025 21:03:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-05 21:13:37,323 - INFO - Use pytorch device_name: cpu
+2025-05-05 21:13:37,323 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-05 21:13:44,087 - INFO - Loading pre-built indexes...
+2025-05-05 21:13:47,541 - INFO - Loaded 1460 legal document chunks
+2025-05-05 21:13:47,556 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.22:5000
+2025-05-05 21:13:47,556 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-05 21:14:06,337 - INFO - 127.0.0.1 - - [05/May/2025 21:14:06] "GET / HTTP/1.1" 200 -
+2025-05-05 21:14:06,343 - INFO - 127.0.0.1 - - [05/May/2025 21:14:06] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-05-05 21:14:06,404 - INFO - 127.0.0.1 - - [05/May/2025 21:14:06] "GET /get_conversations HTTP/1.1" 200 -
+2025-05-05 21:14:58,751 - INFO - 127.0.0.1 - - [05/May/2025 21:14:58] "GET / HTTP/1.1" 200 -
+2025-05-05 21:14:58,761 - INFO - 127.0.0.1 - - [05/May/2025 21:14:58] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-05-05 21:14:58,780 - INFO - 127.0.0.1 - - [05/May/2025 21:14:58] "GET /get_conversations HTTP/1.1" 200 -
+2025-05-05 21:14:59,839 - INFO - 127.0.0.1 - - [05/May/2025 21:14:59] "GET / HTTP/1.1" 200 -
+2025-05-05 21:14:59,850 - INFO - 127.0.0.1 - - [05/May/2025 21:14:59] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-05-05 21:14:59,861 - INFO - 127.0.0.1 - - [05/May/2025 21:14:59] "GET /get_conversations HTTP/1.1" 200 -
+2025-05-05 21:15:03,496 - INFO - 127.0.0.1 - - [05/May/2025 21:15:03] "GET / HTTP/1.1" 200 -
+2025-05-05 21:15:03,513 - INFO - 127.0.0.1 - - [05/May/2025 21:15:03] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-05-05 21:15:03,594 - INFO - 127.0.0.1 - - [05/May/2025 21:15:03] "GET /get_conversations HTTP/1.1" 200 -
+2025-05-05 21:17:50,128 - INFO - 127.0.0.1 - - [05/May/2025 21:17:50] "GET / HTTP/1.1" 200 -
+2025-05-05 21:17:50,135 - INFO - 127.0.0.1 - - [05/May/2025 21:17:50] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-05-05 21:17:50,156 - INFO - 127.0.0.1 - - [05/May/2025 21:17:50] "GET /get_conversations HTTP/1.1" 200 -
+2025-05-05 21:23:33,871 - INFO - 127.0.0.1 - - [05/May/2025 21:23:33] "GET / HTTP/1.1" 200 -
+2025-05-05 21:23:33,879 - INFO - 127.0.0.1 - - [05/May/2025 21:23:33] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-05-05 21:23:33,898 - INFO - 127.0.0.1 - - [05/May/2025 21:23:33] "GET /get_conversations HTTP/1.1" 200 -
+2025-05-05 23:16:20,746 - INFO - Use pytorch device_name: cpu
+2025-05-05 23:16:20,747 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-05 23:16:42,128 - INFO - Loading pre-built indexes...
+2025-05-05 23:16:45,775 - INFO - Loaded 1460 legal document chunks
+2025-05-05 23:16:45,789 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.22:5000
+2025-05-05 23:16:45,789 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-05 23:16:54,096 - INFO - 127.0.0.1 - - [05/May/2025 23:16:54] "GET / HTTP/1.1" 200 -
+2025-05-05 23:16:54,108 - INFO - 127.0.0.1 - - [05/May/2025 23:16:54] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-05-05 23:16:54,172 - INFO - 127.0.0.1 - - [05/May/2025 23:16:54] "GET /get_conversations HTTP/1.1" 200 -
+2025-05-05 23:16:56,439 - INFO - 127.0.0.1 - - [05/May/2025 23:16:56] "GET /get_conversation/31 HTTP/1.1" 200 -
+2025-05-05 23:17:00,427 - ERROR - Error generating title: 'MarianMTModel' object has no attribute 'lower'
+2025-05-05 23:17:00,698 - INFO - Processing query: 'What are the requirements for starting a business in Tunisia?' for conversation 35
+2025-05-05 23:17:00,708 - INFO - Query received: What are the requirements for starting a business in Tunisia?
+2025-05-05 23:17:01,458 - INFO - Search scores:
+Document 473 (chunk: chunk_446_sub_1): score=0.6039, confidence=100.00%
+Document 701 (chunk: chunk_669): score=0.5000, confidence=82.80%
+Document 269 (chunk: chunk_256): score=0.4578, confidence=75.81%
+Document 877 (chunk: chunk_841): score=0.4505, confidence=74.60%
+Document 472 (chunk: chunk_446): score=0.4452, confidence=73.72%
+2025-05-05 23:17:01,463 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-05-05 23:17:01,463 - ERROR - Error generating answer: 'MarianMTModel' object has no attribute 'lower'
+2025-05-05 23:17:01,464 - INFO - Agent workflow completed in 1.04s
+2025-05-05 23:17:01,464 - ERROR - Exception on /ask [POST]
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 883, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 902, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 1174, in make_response
+    raise TypeError(
+TypeError: The view function for 'ask' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-05 23:17:01,466 - INFO - 127.0.0.1 - - [05/May/2025 23:17:01] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2025-05-05 23:19:04,122 - INFO - 127.0.0.1 - - [05/May/2025 23:19:04] "GET / HTTP/1.1" 200 -
+2025-05-05 23:19:04,129 - INFO - 127.0.0.1 - - [05/May/2025 23:19:04] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-05-05 23:19:04,149 - INFO - 127.0.0.1 - - [05/May/2025 23:19:04] "GET /get_conversations HTTP/1.1" 200 -
+2025-05-05 23:19:04,980 - ERROR - Error generating title: 'MarianMTModel' object has no attribute 'lower'
+2025-05-05 23:19:05,150 - INFO - Processing query: 'What are the requirements for starting a business in Tunisia?' for conversation 36
+2025-05-05 23:19:05,151 - INFO - Query received: What are the requirements for starting a business in Tunisia?
+2025-05-05 23:19:05,546 - INFO - Search scores:
+Document 473 (chunk: chunk_446_sub_1): score=0.6039, confidence=100.00%
+Document 701 (chunk: chunk_669): score=0.5000, confidence=82.80%
+Document 269 (chunk: chunk_256): score=0.4578, confidence=75.81%
+Document 877 (chunk: chunk_841): score=0.4505, confidence=74.60%
+Document 472 (chunk: chunk_446): score=0.4452, confidence=73.72%
+2025-05-05 23:19:05,550 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-05-05 23:19:05,550 - ERROR - Error generating answer: 'MarianMTModel' object has no attribute 'lower'
+2025-05-05 23:19:05,550 - INFO - Agent workflow completed in 0.57s
+2025-05-05 23:19:05,550 - ERROR - Exception on /ask [POST]
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 883, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 902, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 1174, in make_response
+    raise TypeError(
+TypeError: The view function for 'ask' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-05 23:19:05,551 - INFO - 127.0.0.1 - - [05/May/2025 23:19:05] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2025-05-05 23:19:33,907 - INFO - Use pytorch device_name: cpu
+2025-05-05 23:19:33,907 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-05 23:19:42,341 - INFO - Loading pre-built indexes...
+2025-05-05 23:19:45,598 - INFO - Loaded 1460 legal document chunks
+2025-05-05 23:19:45,610 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.22:5000
+2025-05-05 23:19:45,610 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-05 23:25:49,754 - INFO - 127.0.0.1 - - [05/May/2025 23:25:49] "GET / HTTP/1.1" 200 -
+2025-05-05 23:25:49,871 - INFO - 127.0.0.1 - - [05/May/2025 23:25:49] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-05-05 23:25:49,915 - INFO - 127.0.0.1 - - [05/May/2025 23:25:49] "GET /get_conversations HTTP/1.1" 200 -
+2025-05-05 23:25:50,837 - ERROR - Error generating title: 'MarianMTModel' object has no attribute 'lower'
+2025-05-05 23:25:51,085 - INFO - Processing query: 'What are the requirements for starting a business in Tunisia?' for conversation 37
+2025-05-05 23:25:51,101 - INFO - Query received: What are the requirements for starting a business in Tunisia?
+2025-05-05 23:25:51,955 - INFO - Search scores:
+Document 473 (chunk: chunk_446_sub_1): score=0.6039, confidence=100.00%
+Document 701 (chunk: chunk_669): score=0.5000, confidence=82.80%
+Document 269 (chunk: chunk_256): score=0.4578, confidence=75.81%
+Document 877 (chunk: chunk_841): score=0.4505, confidence=74.60%
+Document 472 (chunk: chunk_446): score=0.4452, confidence=73.72%
+2025-05-05 23:25:51,963 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-05-05 23:25:51,963 - ERROR - Error generating answer: 'MarianMTModel' object has no attribute 'lower'
+2025-05-05 23:25:51,964 - INFO - Agent workflow completed in 1.13s
+2025-05-05 23:25:51,964 - ERROR - Exception on /ask [POST]
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 883, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 902, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 1174, in make_response
+    raise TypeError(
+TypeError: The view function for 'ask' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-05 23:25:51,969 - INFO - 127.0.0.1 - - [05/May/2025 23:25:51] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2025-05-05 23:28:15,409 - INFO - Use pytorch device_name: cpu
+2025-05-05 23:28:15,409 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-05 23:28:46,096 - INFO - Loading pre-built indexes...
+2025-05-05 23:28:49,700 - INFO - Loaded 1460 legal document chunks
+2025-05-05 23:28:49,728 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.22:5000
+2025-05-05 23:28:49,728 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-05 23:28:49,743 - INFO -  * Restarting with watchdog (windowsapi)
+2025-05-05 23:29:01,655 - INFO - Use pytorch device_name: cpu
+2025-05-05 23:29:01,655 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-05 23:30:24,083 - INFO - Loading pre-built indexes...
+2025-05-05 23:30:31,748 - INFO - Loaded 1460 legal document chunks
+2025-05-05 23:30:31,770 - WARNING -  * Debugger is active!
+2025-05-05 23:30:31,785 - INFO -  * Debugger PIN: 544-024-019
+2025-05-05 23:30:31,846 - INFO - 127.0.0.1 - - [05/May/2025 23:30:31] "GET / HTTP/1.1" 200 -
+2025-05-05 23:30:31,857 - INFO - 127.0.0.1 - - [05/May/2025 23:30:31] "GET / HTTP/1.1" 200 -
+2025-05-05 23:30:31,859 - INFO - 127.0.0.1 - - [05/May/2025 23:30:31] "GET / HTTP/1.1" 200 -
+2025-05-05 23:30:31,864 - INFO - 127.0.0.1 - - [05/May/2025 23:30:31] "GET / HTTP/1.1" 200 -
+2025-05-05 23:30:31,886 - INFO - 127.0.0.1 - - [05/May/2025 23:30:31] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-05-05 23:30:31,904 - INFO - 127.0.0.1 - - [05/May/2025 23:30:31] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-05-05 23:30:31,945 - INFO - 127.0.0.1 - - [05/May/2025 23:30:31] "GET /get_conversations HTTP/1.1" 200 -
+2025-05-05 23:30:31,951 - INFO - 127.0.0.1 - - [05/May/2025 23:30:31] "GET /get_conversations HTTP/1.1" 200 -
+2025-05-05 23:30:34,391 - ERROR - Error generating title: 'MarianMTModel' object has no attribute 'lower'
+2025-05-05 23:30:34,602 - INFO - Processing query: 'What are the requirements for starting a business in Tunisia?' for conversation 38
+2025-05-05 23:30:34,637 - INFO - Query received: What are the requirements for starting a business in Tunisia?
+2025-05-05 23:30:35,333 - INFO - Search scores:
+Document 473 (chunk: chunk_446_sub_1): score=0.6039, confidence=100.00%
+Document 701 (chunk: chunk_669): score=0.5000, confidence=82.80%
+Document 269 (chunk: chunk_256): score=0.4578, confidence=75.81%
+Document 877 (chunk: chunk_841): score=0.4505, confidence=74.60%
+Document 472 (chunk: chunk_446): score=0.4452, confidence=73.72%
+2025-05-05 23:30:35,340 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-05-05 23:30:35,340 - ERROR - Error generating answer: 'MarianMTModel' object has no attribute 'lower'
+2025-05-05 23:30:35,340 - INFO - Agent workflow completed in 0.95s
+2025-05-05 23:30:35,345 - INFO - 127.0.0.1 - - [05/May/2025 23:30:35] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2025-05-05 23:31:11,896 - INFO -  * Detected change in 'd:\\projet_sem2\\Contract_Agentic_RAG_Chatbot_flask-main\\app_chedly.py', reloading
+2025-05-05 23:31:11,897 - INFO -  * Detected change in 'd:\\projet_sem2\\Contract_Agentic_RAG_Chatbot_flask-main\\app_chedly.py', reloading
+2025-05-05 23:31:11,898 - INFO -  * Detected change in 'd:\\projet_sem2\\Contract_Agentic_RAG_Chatbot_flask-main\\app_chedly.py', reloading
+2025-05-05 23:31:14,210 - INFO -  * Restarting with watchdog (windowsapi)
+2025-05-05 23:31:33,415 - INFO - Use pytorch device_name: cpu
+2025-05-05 23:31:33,415 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-05 23:31:49,567 - INFO - Loading pre-built indexes...
+2025-05-05 23:31:56,273 - INFO - Loaded 1460 legal document chunks
+2025-05-05 23:32:52,219 - INFO - Use pytorch device_name: cpu
+2025-05-05 23:32:52,219 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-05 23:34:11,863 - INFO - Loading pre-built indexes...
+2025-05-05 23:34:16,960 - INFO - Loaded 1460 legal document chunks
+2025-05-05 23:34:16,981 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.22:5000
+2025-05-05 23:34:16,981 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-05 23:34:16,997 - INFO -  * Restarting with watchdog (windowsapi)
+2025-05-05 23:34:35,890 - INFO - Use pytorch device_name: cpu
+2025-05-05 23:34:35,890 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-05 23:34:51,493 - INFO - Loading pre-built indexes...
+2025-05-05 23:34:59,884 - INFO - Loaded 1460 legal document chunks
+2025-05-05 23:34:59,896 - WARNING -  * Debugger is active!
+2025-05-05 23:34:59,906 - INFO -  * Debugger PIN: 544-024-019
+2025-05-05 23:34:59,947 - INFO - 127.0.0.1 - - [05/May/2025 23:34:59] "GET / HTTP/1.1" 200 -
+2025-05-05 23:34:59,948 - INFO - 127.0.0.1 - - [05/May/2025 23:34:59] "GET / HTTP/1.1" 200 -
+2025-05-05 23:34:59,960 - INFO - 127.0.0.1 - - [05/May/2025 23:34:59] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-05-05 23:35:00,062 - INFO - 127.0.0.1 - - [05/May/2025 23:35:00] "GET /get_conversations HTTP/1.1" 200 -
+2025-05-05 23:35:02,411 - INFO - Sending request to Groq API: model=gemma2-9b-it, temperature=0.7, max_tokens=1000
+2025-05-05 23:35:04,074 - ERROR - HTTP error occurred: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions (Status code: 401)
+2025-05-05 23:35:04,074 - ERROR - Error generating title: Authentication error: Invalid API key
+2025-05-05 23:35:04,303 - INFO - Processing query: 'What are the requirements for starting a business in Tunisia?' for conversation 39
+2025-05-05 23:35:04,337 - INFO - Query received: What are the requirements for starting a business in Tunisia?
+2025-05-05 23:35:05,039 - INFO - Search scores:
+Document 473 (chunk: chunk_446_sub_1): score=0.6039, confidence=100.00%
+Document 701 (chunk: chunk_669): score=0.5000, confidence=82.80%
+Document 269 (chunk: chunk_256): score=0.4578, confidence=75.81%
+Document 877 (chunk: chunk_841): score=0.4505, confidence=74.60%
+Document 472 (chunk: chunk_446): score=0.4452, confidence=73.72%
+2025-05-05 23:35:05,043 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-05-05 23:35:05,043 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-05-05 23:35:07,580 - ERROR - HTTP error occurred: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions (Status code: 401)
+2025-05-05 23:35:07,581 - ERROR - Error generating answer: Authentication error: Invalid API key
+2025-05-05 23:35:07,590 - INFO - Agent workflow completed in 5.18s
+2025-05-05 23:35:07,612 - INFO - 127.0.0.1 - - [05/May/2025 23:35:07] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2025-05-05 23:37:20,715 - INFO - Use pytorch device_name: cpu
+2025-05-05 23:37:20,715 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-05-05 23:37:29,678 - INFO - Loading pre-built indexes...
+2025-05-05 23:37:35,791 - INFO - Loaded 1460 legal document chunks
+2025-05-05 23:37:35,807 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.22:5000
+2025-05-05 23:37:35,807 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-05 23:37:46,257 - INFO - 127.0.0.1 - - [05/May/2025 23:37:46] "GET / HTTP/1.1" 200 -
+2025-05-05 23:37:46,298 - INFO - 127.0.0.1 - - [05/May/2025 23:37:46] "GET /js/article_popup.js HTTP/1.1" 200 -
+2025-05-05 23:37:46,434 - INFO - 127.0.0.1 - - [05/May/2025 23:37:46] "GET /get_conversations HTTP/1.1" 200 -
+2025-05-05 23:37:47,965 - INFO - Sending request to Groq API: model=gemma2-9b-it, temperature=0.7, max_tokens=1000
+2025-05-05 23:37:49,008 - ERROR - HTTP error occurred: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions (Status code: 401)
+2025-05-05 23:37:49,008 - ERROR - Error generating title: Authentication error: Invalid API key
+2025-05-05 23:37:49,268 - INFO - Processing query: 'What are the requirements for starting a business in Tunisia?' for conversation 40
+2025-05-05 23:37:49,299 - INFO - Query received: What are the requirements for starting a business in Tunisia?
+2025-05-05 23:37:50,093 - INFO - Search scores:
+Document 473 (chunk: chunk_446_sub_1): score=0.6039, confidence=100.00%
+Document 701 (chunk: chunk_669): score=0.5000, confidence=82.80%
+Document 269 (chunk: chunk_256): score=0.4578, confidence=75.81%
+Document 877 (chunk: chunk_841): score=0.4505, confidence=74.60%
+Document 472 (chunk: chunk_446): score=0.4452, confidence=73.72%
+2025-05-05 23:37:50,099 - INFO - Sending request to Groq API with model: deepseek-r1-distill-llama-70b
+2025-05-05 23:37:50,099 - INFO - Sending request to Groq API: model=deepseek-r1-distill-llama-70b, temperature=0.1, max_tokens=2048
+2025-05-05 23:37:50,831 - ERROR - HTTP error occurred: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions (Status code: 401)
+2025-05-05 23:37:50,831 - ERROR - Error generating answer: Authentication error: Invalid API key
+2025-05-05 23:37:50,837 - INFO - Agent workflow completed in 2.87s
+2025-05-05 23:37:50,837 - ERROR - Exception on /ask [POST]
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 883, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 902, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\flask\app.py", line 1174, in make_response
+    raise TypeError(
+TypeError: The view function for 'ask' did not return a valid response. The function either returned None or ended without a return statement.
+2025-05-05 23:37:50,842 - INFO - 127.0.0.1 - - [05/May/2025 23:37:50] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -

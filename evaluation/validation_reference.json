@@ -1,0 +1,364 @@
+[
+    {
+      "id": 1,
+      "question": "À propos du contrat contrat_de_location_21.02.2014.pdf: QUELLE EST LA MATRICULE FISCALE DE CE CONTRAT",
+      "generated_answer": "Le contrat mentionne deux matricules fiscales, correspondant aux deux parties signataires : Matricule fiscale du bailleur (L’Ecole Supérieure Privée d’Ingénierie et de Technologies – ESPRIT) : 830823/CMatricule fiscale du locataire (Société Zohra, SUARL) : 1166084" },
+    {
+      "id": 2,
+      "question": "À propos du contrat contrat_de_location_21.02.2014.pdf: Le locataire peut-il modifier le local sans autorisation ?",
+      "generated_answer": "Non, toute transformation du local nécessite l'autorisation écrite du bailleur."
+    },
+    {
+        "id": 3,
+        "question": "À propos du contrat contrat_de_location_21.02.2014.pdf: À quoi sert la caution de 9 000 dinars ?",
+        "generated_answer": "Elle sert à garantir l’exécution des obligations du locataire. Elle est rendue à la fin du bail et ne produit pas d’intérêts."
+      },
+      {
+        "id": 4,
+        "question": "À propos du contrat contrat_de_location_21.02.2014.pdf: Quelles assurances le locataire doit-il souscrire ?",
+        "generated_answer": " Il doit souscrire une assurance contre les incendies, explosions, dégâts des eaux, et recours des tiers, et remettre au bailleur les copies des polices d’assurance et les quittances."
+      },
+      {
+        "id": 5,
+        "question": "À propos du contrat contrat_de_location_21.02.2014.pdf: Quelles sont les conditions de résiliation du contrat ?",
+        "generated_answer": "En cas d’infraction (comme le non-paiement du loyer), le contrat peut être résilié de plein droit si le locataire ne remédie pas à la situation dans les 30 jours suivant une mise en demeure écrite."
+      },
+      {
+        "id": 6,
+        "question": "À propos du contrat contrat_de_location_21.02.2014.pdf: En cas de dégâts causés par un tiers, que se passe-t-il ?",
+        "generated_answer": " Le locataire n’a aucun recours contre le bailleur en cas de dommages causés par des tiers."
+      },
+      {
+        "id": 7,
+        "question": "À propos du contrat contrat_de_location_21.02.2014.pdf: Quelles sont les conditions de résiliation du contrat ?",
+        "generated_answer": "En cas d’infraction (comme le non-paiement du loyer), le contrat peut être résilié de plein droit si le locataire ne remédie pas à la situation dans les 30 jours suivant une mise en demeure écrite."
+      },
+      {
+            "id": 8,
+            "question": "À propos du contrat Convention_ESPRIT-MEHDI_AKROUT-2.pdf: Qui sont les deux parties contractantes dans ce document ?",
+        "generated_answer": "Il s’agit de Monsieur Mehdi AKROUT (le Consultant) et de l’École Supérieure Privée d’Ingénierie et de Technologies (ESPRIT)."
+      },
+        {
+          "id": 9,
+          "question": "À propos du contrat Convention_ESPRIT-MEHDI_AKROUT-2.pdf : Qui sont les deux parties contractantes dans ce document ?",
+          "generated_answer": "Les deux parties contractantes sont Monsieur Mehdi Akroud, le consultant, et l'Ecole Supérieure Privée d'Ingénierie et de Technologies (ESPRIT)."
+        },
+        {
+          "id": 10,
+          "question": "À propos du contrat Convention_ESPRIT-MEHDI_AKROUT-2.pdf : Quelle est la mission principale du consultant dans ce contrat ?",
+          "generated_answer": "La mission principale du consultant est de diriger les stages et les relations avec les entreprises pour faciliter l’intégration des élèves ingénieurs dans le monde professionnel."
+        },
+        {
+          "id": 11,
+          "question": "À propos du contrat Convention_ESPRIT-MEHDI_AKROUT-2.pdf : Quel est le montant de la rémunération mensuelle du consultant ?",
+          "generated_answer": "Le consultant perçoit une rémunération mensuelle de 2 578,990 Dinars Tunisiens hors TVA."
+        },
+        {
+          "id": 12,
+          "question": "À propos du contrat Convention_ESPRIT-MEHDI_AKROUT-2.pdf : Quelle est la durée initiale du contrat ?",
+          "generated_answer": "Le contrat est signé pour une durée d'un an, renouvelable par tacite reconduction."
+        },
+        {
+          "id": 13,
+          "question": "À propos du contrat Convention_ESPRIT-MEHDI_AKROUT-2.pdf : Quels sont les livrables attendus du consultant selon ce contrat ?",
+          "generated_answer": "Les livrables sont : un programme d'activités annuel, des rapports d'activités annuels, et des comptes rendus de suivi des activités."
+        }
+        ,    {
+            "id": 14,
+            "question": "À propos du contrat Copie_de_Convention_ESPRIT-CEGEP_DE_LA_POCATIERE_corporation.pdf : Qui sont les deux parties contractantes dans ce document ?",
+            "generated_answer": "Les deux parties contractantes sont le Cégep de La Pocatière, représenté par madame Marie-Claude Deschénes, et l'École Supérieure Privée d'Ingénierie et de Technologie (ESPRIT), représentée par monsieur Tahar Ben Lakhdar."
+          },
+          {
+            "id": 15,
+            "question": "À propos du contrat Copie_de_Convention_ESPRIT-CEGEP_DE_LA_POCATIERE_corporation.pdf : Quels sont les trois axes de coopération mentionnés dans ce document ?",
+            "generated_answer": "Les trois axes de coopération sont l'Éducation, la Recherche et Développement, et les Stages Internationaux."
+          },
+          {
+            "id": 16,
+            "question": "À propos du contrat Copie_de_Convention_ESPRIT-CEGEP_DE_LA_POCATIERE_corporation.pdf : Quelle est la durée initiale de la convention de collaboration ?",
+            "generated_answer": "La durée initiale de la convention de collaboration est de trois ans, à compter de la date de signature."
+          },
+          {
+            "id": 17,
+            "question": "À propos du contrat Copie_de_Convention_ESPRIT-CEGEP_DE_LA_POCATIERE_corporation.pdf : Quels sont les objectifs du partenariat dans le domaine de l'Éducation ?",
+            "generated_answer": "Les objectifs incluent la reconnaissance mutuelle des programmes de formation entre la Tunisie et le Québec, la délocalisation de programmes et le soutien à la mobilité étudiante, enseignante et des gestionnaires."
+          },
+          {
+            "id": 18,
+            "question": "À propos du contrat Copie_de_Convention_ESPRIT-CEGEP_DE_LA_POCATIERE_corporation.pdf : Quel est le rôle du Cégep de La Pocatière dans la collaboration ?",
+            "generated_answer": "Le Cégep de La Pocatière assurera le regroupement et la coordination des travaux auprès de ses partenaires au Québec."
+          },
+          {
+            "id": 19,
+            "question": "À propos du contrat Copie_de_Convention_ESPRIT-CEGEP_DE_LA_POCATIERE_corporation.pdf : Quelle est la durée de la période de confidentialité après la fin de la collaboration ?",
+            "generated_answer": "La période de confidentialité prend effet à la fin de la collaboration et dure trois ans."
+          },
+          {
+            "id": 20,
+            "question": "À propos du contrat Copie_de_Convention_ESPRIT-CEGEP_DE_LA_POCATIERE_corporation.pdf : Quelles informations sont considérées comme confidentielles selon ce document ?",
+            "generated_answer": "Les informations confidentielles incluent toutes données techniques, commerciales, stratégiques ou financières, ainsi que les documents, rapports, études de marché et autres informations désignées comme confidentielles."
+          },
+          {
+            "id": 21,
+            "question": "À propos du contrat Copie_de_Convention_ESPRIT-CEGEP_DE_LA_POCATIERE_corporation.pdf : Quels sont les points focaux désignés pour la mise en œuvre de l'entente ?",
+            "generated_answer": "Pour le Cégep de La Pocatière, le point focal est monsieur Christian Plouznikoff, et pour ESPRIT, c'est monsieur Mekki Ksouri."
+          },
+          {
+            "id": 22,
+            "question": "À propos du contrat Copie_de_Convention_ESPRIT-CEGEP_DE_LA_POCATIERE_corporation.pdf : Quel est le processus de résolution des différends selon ce document ?",
+            "generated_answer": "Les différends sont résolus par voie d'arbitrage conformément au Règlement d'arbitrage international du CCAC, avec siège à Montréal, et la langue de la procédure est le français."
+          }
+        
+           , {
+              "id": 23,
+              "question": "À propos du contrat 'Copie_de_Convention_ESPRIT-Universite_Nice_Sophia_Antipolis-Avenant.pdf' : Quelles sont les deux institutions signataires de cet avenant ?",
+              "generated_answer": "Les deux institutions signataires sont l'Université Nice Sophia-Antipolis et l'École Supérieure Privée d'Ingénierie et de Technologies (ESPRIT - Tunis)."
+            },
+            {
+              "id": 24,
+              "question": "À propos du contrat 'Copie_de_Convention_ESPRIT-Universite_Nice_Sophia_Antipolis-Avenant.pdf' : Quelle est la finalité principale de ce partenariat ?",
+              "generated_answer": "La finalité est de permettre aux élèves-ingénieurs d'ESPRIT, spécialité INFINI, d'obtenir conjointement leur diplôme d'ingénieur et le Master IMAFA de l'Université Nice Sophia-Antipolis."
+            },
+            {
+              "id": 25,
+              "question": "À propos du contrat 'Copie_de_Convention_ESPRIT-Universite_Nice_Sophia_Antipolis-Avenant.pdf' : Qui sont les responsables pédagogiques désignés pour superviser cette coopération ?",
+              "generated_answer": "Madame Anne-Marie Hugues (Université Nice Sophia-Antipolis) et Madame Yousra Gati (ESPRIT) sont les responsables pédagogiques désignées."
+            },
+            {
+              "id": 26,
+              "question": "À propos du contrat 'Copie_de_Convention_ESPRIT-Universite_Nice_Sophia_Antipolis-Avenant.pdf' : Quelles sont les conditions linguistiques requises pour les étudiants ?",
+              "generated_answer": "Les étudiants doivent avoir un niveau de langue française équivalent au niveau B2 pour pouvoir suivre le Master."
+            },
+            {
+              "id": 27,
+              "question": "À propos du contrat 'Copie_de_Convention_ESPRIT-Universite_Nice_Sophia_Antipolis-Avenant.pdf' : Quels laboratoires sont associés à la formation ?",
+              "generated_answer": "Le laboratoire I3S de l'Université Nice Sophia-Antipolis et le laboratoire EspriTec d’ESPRIT sont les deux laboratoires associés."
+            },
+            {
+              "id": 28,
+              "question": "À propos du contrat 'Copie_de_Convention_ESPRIT-Universite_Nice_Sophia_Antipolis-Avenant.pdf' : Comment est organisée la sélection des étudiants pour le Master IMAFA ?",
+              "generated_answer": "Un jury mixte UNS-ESPRIT sélectionne les étudiants ayant réussi la 4e année INFINI avant le 1er septembre, avec des membres désignés de chaque institution."
+            },
+            {
+              "id": 29,
+              "question": "À propos du contrat 'Copie_de_Convention_ESPRIT-Universite_Nice_Sophia_Antipolis-Avenant.pdf' : Quelle est la structure de prise en charge financière pour les missions d’enseignement ?",
+              "generated_answer": "ESPRIT prend en charge les frais de transport et per-diems (200 DT/jour) pour les enseignants-chercheurs de l'Université Nice Sophia-Antipolis."
+            },
+            {
+              "id": 30,
+              "question": "À propos du contrat 'Copie_de_Convention_ESPRIT-Universite_Nice_Sophia_Antipolis-Avenant.pdf' : Que doivent faire les étudiants pour être inscrits au Master IMAFA ?",
+              "generated_answer": "Ils doivent s’inscrire dans les deux institutions partenaires : ESPRIT et l’Université Nice Sophia-Antipolis, et s’acquitter des droits d’inscription à l’UNS."
+            }   
+            ,{
+                "id": 31,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Quelle est la nature de cette convention ?",
+                "generated_answer": "C'est une convention de partenariat pour la fabrication d’un prototype de distributeur automatique multi-services à écran tactile."
+                },
+                {
+                "id": 32,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Qui représente DT-MODE dans cette convention ?",
+                "generated_answer": "M. Mohamed Saifeddinne Braham, en sa qualité de gérant."
+                },
+                {
+                "id": 33,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Qui représente l’école ESPRIT ?",
+                "generated_answer": "M. Taher Ben Lakhdhar, en sa qualité de directeur général."
+                },
+                {
+                "id": 34,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Quel est l’objet principal de la convention ?",
+                "generated_answer": "La fabrication d’un prototype de distributeur automatique innovant à écran tactile."
+                },
+                {
+                "id": 35,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Quelle est la contribution d’ESPRIT ?",
+                "generated_answer": "ESPRIT finance la fabrication du premier prototype du produit."
+                },
+                {
+                "id": 36,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Quelle est l’obligation de DT-MODE concernant la visibilité d’ESPRIT ?",
+                "generated_answer": "DT-MODE doit afficher le nom ou le logo d’ESPRIT de façon visible sur le prototype."
+                },
+                {
+                "id": 37,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Dans quels contextes DT-MODE doit-elle mentionner ESPRIT ?",
+                "generated_answer": "Lors de toute présentation ou démonstration du prototype, à des fins commerciales, de financement ou ludiques."
+                },
+                {
+                "id": 38,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Combien de modems GSM sont inclus dans la liste du matériel ?",
+                "generated_answer": "Trois modems GSM."
+                },
+                {
+                "id": 39,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Quel est le coût total TTC du matériel listé ?",
+                "generated_answer": "10 999,900 dinars tunisiens."
+                },
+                {
+                "id": 40,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Quelle est la date de signature de la convention ?",
+                "generated_answer": "Le 02 août 2011."
+                },
+                {
+                "id": 41,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Quelle est la taille de l’écran LED ?",
+                "generated_answer": "46 pouces."
+                },
+                {
+                "id": 42,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Quelle est la fonction de la dalle tactile ?",
+                "generated_answer": "Permettre l’interaction entre l’utilisateur et le distributeur."
+                },
+                {
+                "id": 43,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Quelle est la quantité de moteurs pas à pas ?",
+                "generated_answer": "Seize (16) moteurs pas à pas."
+                },
+                {
+                "id": 44,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Combien de contrôleurs de moteurs sont nécessaires ?",
+                "generated_answer": "Quatre contrôleurs pour moteurs pas à pas."
+                },
+                {
+                "id": 45,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : À quoi sert le verre anti-vandalisme ?",
+                "generated_answer": "Il protège l’écran contre les actes de vandalisme."
+                },
+                {
+                "id": 46,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Quelle est la quantité de caméras prévue ?",
+                "generated_answer": "Une caméra HD."
+                },
+                {
+                "id": 47,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Quel est le prix TTC de l’unité de calcul ?",
+                "generated_answer": "768,000 dinars."
+                },
+                {
+                "id": 48,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Quel est le coût unitaire d’un modem GSM ?",
+                "generated_answer": "150,000 dinars tunisiens."
+                },
+                {
+                "id": 49,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Quel est le prix du châssis en acier blindé ?",
+                "generated_answer": "595,900 dinars."
+                },
+                {
+                "id": 50,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Quelle est la quantité de plexiglas noir utilisée ?",
+                "generated_answer": "Une unité."
+                },
+                {
+                "id": 51,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : À quoi sert l’unité de refroidissement interne ?",
+                "generated_answer": "Elle permet de maintenir les composants électroniques à une température optimale."
+                },
+                {
+                "id": 52,
+                "question": "À propos du contrat Copie_de_Convention_ESPRIT-DEVLOPMENT_TECHNOLOGY_MODET.pdf : Le prototype comporte-t-il un climatiseur ?",
+                "generated_answer": "Oui, un climatiseur est inclus dans la liste du matériel."
+                },
+                {
+                  "id": 53,
+                  "question": "À propos du contrat Convention_ESPRIT-Boudrant.pdf : Quelles sont les deux parties signataires de la convention cadre ?",
+                  "generated_answer": "Les deux parties signataires sont la société BOUDRANT (SARL) et l’École Supérieure Privée d'Ingénierie et de Technologie (ESPRIT)."
+                },
+                {
+                  "id": 54,
+                  "question": "À propos du contrat Convention_ESPRIT-Boudrant.pdf : Quel est le capital social de la société BOUDRANT ?",
+                  "generated_answer": "Le capital social de BOUDRANT est de 4 000 000 Dinars Tunisiens."
+                },
+                {
+                  "id": 55,
+                  "question": "À propos du contrat Convention_ESPRIT-Boudrant.pdf : Où est situé le siège social d’ESPRIT ?",
+                  "generated_answer": "Le siège social d’ESPRIT est sis au 18, rue de l’Usine, Charguia II – 2035 Ariana, Tunisie."
+                },
+                {
+                  "id": 56,
+                  "question": "À propos du contrat Convention_ESPRIT-Boudrant.pdf : Qui représente BOUDRANT et sous quelle fonction ?",
+                  "generated_answer": "BOUDRANT est représentée par M. Kamel Ben Chamam en sa qualité de Gérant."
+                },
+                {
+                  "id": 57,
+                  "question": "À propos du contrat Convention_ESPRIT-Boudrant.pdf : Quels sont les principaux domaines d’expertise que BOUDRANT apportera ?",
+                  "generated_answer": "BOUDRANT apportera son expertise en roulements et accessoires industriels, transmission mécanique, outillage, outils coupants et automatisme."
+                },
+                {
+                  "id": 58,
+                  "question": "À propos du contrat Convention_ESPRIT-Boudrant.pdf : Quels types de formations ES PRIT s’engage-t-elle à offrir ?",
+                  "generated_answer": "ESPRIT offrira des formations initiales d’ingénieurs opérationnels, des formations continues qualifiantes et certifiantes sur mesure, ainsi que des projets de recherche et développement via son département Esprit-Tech."
+                },
+                {
+                  "id": 59,
+                  "question": " À propos du contrat Convention_ESPRIT-Boudrant.pdf : Quelle est la durée initiale de la convention cadre et ses modalités de renouvellement ?",
+                  "generated_answer": "La convention est conclue pour trois ans renouvelables par tacite reconduction d’une année, sauf résiliation trois mois avant échéance par lettre recommandée."
+                },
+                {
+                  "id": 60,
+                  "question": "À propos du contrat Convention_ESPRIT-Boudrant.pdf : Par quel tribunal seront tranchés les litiges en cas de désaccord persistant ?",
+                  "generated_answer": "Les litiges seront soumis aux tribunaux de première instance de Tunis."
+                },
+                {
+                  "id": 61,
+                  "question": "À propos du contrat Convention_ESPRIT-Boudrant.pdf : Quels engagements financiers sont prévus pour l’équipement des laboratoires ?",
+                  "generated_answer": "BOUDRANT participera à l’investissement en équipements (lubrification, transmission, roulements, outils de coupe) et les modalités (budget, nature, type, nombre de produits) seront définies dans un accord spécifique."
+                },
+                {
+                  "id": 62,
+                  "question": "À propos du contrat Convention_ESPRIT-Boudrant.pdf : Comment seront formalisés les projets spécifiques de coopération ?",
+                  "generated_answer": "Chaque projet spécifique fera l’objet d’un avenant détaillant actions, calendrier, responsabilités, modalités de financement et de coordination."
+                },
+
+                 
+              {
+                "id": 63,
+                "question": "À propos du contrat contrat_vacataire_esprit.pdf : Quelles sont les parties signataires du contrat d'enseignant vacataire ?",
+                "generated_answer": "Les parties signataires sont l'École Supérieure Privée d'Ingénierie et de Technologies ESPRIT, représentée par son directeur Tahar Ben Lakhdar, et l'enseignant vacataire Laroussi Khalil."
+              },
+              {
+                "id": 64,
+                "question": "À propos du contrat contrat_vacataire_esprit.pdf : Quelle est l'identité et la CIN de l'enseignant vacataire ?",
+                "generated_answer": "L'enseignant vacataire est Laroussi Khalil, titulaire de la CIN n° 08881925 délivrée le 02/11/2016 à Tunis."
+              },
+              {
+                "id": 65,
+                "question": "À propos du contrat contrat_vacataire_esprit.pdf : Quel est l'objet du présent contrat ?",
+                "generated_answer": "ESPRIT confie à Laroussi Khalil la charge de dispenser l'enseignement relatif aux modules détaillés à l'article 4, selon les fiches-modules fournies avant le démarrage de la formation."
+              },
+              {
+                "id": 66,
+                "question": "À propos du contrat contrat_vacataire_esprit.pdf : Quelles sont les principales obligations de l'enseignant vacataire ?",
+                "generated_answer": "L'enseignant doit : 1) dispenser les modules et fournir un support de cours conforme ; 2) organiser et corriger les devoirs, examens et rattrapages en concertation ; 3) élaborer les sujets d'examen selon les procédures et fiches-modules ; 4) surveiller et corriger les épreuves ; 5) assister aux délibérations des conseils de classe ; et 6) respecter la charte de l'enseignant."
+              },
+              {
+                "id": 67,
+                "question": "À propos du contrat contrat_vacataire_esprit.pdf : Comment est calculée la rémunération brute pour le module Dimensionnement & Planification ?",
+                "generated_answer": "Pour le module Dimensionnement & Planification (CJ-5ème Informat), une classe de 21 étudiants, le taux unitaire brut est de 40 000 DT, soit un total brut de 840 000 DT."
+              },
+              {
+                "id": 68,
+                "question": "À propos du contrat contrat_vacataire_esprit.pdf : Que se passe-t-il si le volume horaire alloué à un module varie de plus de 20 % ?",
+                "generated_answer": "Toute variation supérieure ou inférieure de plus de 20 % du volume horaire fera l'objet d'un avenant au présent contrat."
+              },
+              {
+                "id": 69,
+                "question": "À propos du contrat contrat_vacataire_esprit.pdf : Quelle exclusion de cotisation au régime de sécurité sociale est prévue ?",
+                "generated_answer": "La rémunération perçue pour les vacations accomplies par des affiliés à un autre régime de sécurité sociale en vertu du décret n° 2003-1098 du 19/05/2003 est exclue de l'assiette de cotisation."
+              },
+              {
+                "id": 70,
+                "question": "À propos du contrat contrat_vacataire_esprit.pdf : Quel est le taux de la retenue à la source appliqué sur le montant total de la rémunération ?",
+                "generated_answer": "Le montant total de la rémunération est soumis à une retenue à la source de 15 % conformément à la législation en vigueur."
+              },
+              {
+                "id": 71,
+                "question": "À propos du contrat contrat_vacataire_esprit.pdf : Quelles sont les modalités et échéances de paiement prévues par le contrat ?",
+                "generated_answer": "Le paiement intervient après achèvement du module et remise des notes et du mémoire d'honoraires visé par la direction. Les échéances sont : fin décembre pour modules achevés avant le 15 décembre, fin mars pour ceux achevés avant le 15 mars, et fin juillet pour ceux achevés avant la fin du second semestre."
+              },
+              {
+                "id": 72,
+                "question": "À propos du contrat contrat_vacataire_esprit.pdf : Quand le contrat prend-il effet et comment peut-il être résilié ?",
+                "generated_answer": "Le contrat prend effet dès sa signature par les deux parties et reste valable pour la durée de la prestation. ESPRIT peut le résilier en cas de manquement grave de l'enseignant à ses obligations."
+              }
+            ]

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComBot - Professional Legal Assistant</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Marked for Markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  
+  <!-- Article popup script -->
+  <script src="/js/article_popup.js"></script>
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">
+
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+        <div class="app-logo">
+          <i class="fas fa-scale-balanced"></i>
+          <span>ComBot</span>
+        </div>
+        <ul class="main-nav">
+          <li><a href="/">Legal Assistant</a></li>
+          <li><a href="/contrat">Upload Contrat</a></li>
+          <li><a href="/chat">Chatbot Contrat</a></li>
+          <li><a href="/search-page">Recherche Contrat</a></li>
+          <li><a href="/test-mehdi">Jort Updates</a></li>
+        </ul>
+        <div class="app-header-actions">
+          <button class="btn-icon toggle-sidebar" id="toggle-sidebar">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </header>
+
+
+<div class="app-container">
+    <main class="app-main">
+        <div class="chat-container">
+            <div class="welcome-screen">
+                <h1 class="welcome-title">
+                    <i class="fas fa-search"></i>
+                    Recherche de documents
+                </h1>
+
+                <div class="search-box">
+                  <div class="chat-input-container enhanced-search">
+                      <i class="fas fa-search search-icon"></i>
+                      <input type="text" 
+                             id="searchInput" 
+                             class="chat-textarea"
+                             placeholder="Rechercher par nom, type, date ou contenu..."
+                             autocomplete="off">
+                      <button class="send-button search-button" type="button">
+                          <i class="fas fa-arrow-right"></i>
+                      </button>
+                  </div>
+              </div>
+
+                    <div class="no-results" id="resultsContainer" style="padding-top: 10px;">
+                        Commencez à taper pour rechercher des documents...
+                    </div>
+
+                
+                </div>
+            </div>
+            <div id="documentPreview" class="thinking-block preview-modal">
+                <div class="thinking-container">
+                    <span class="btn-icon close-btn">&times;</span>
+                    <h2 id="previewTitle" class="welcome-title2"></h2>
+                    <div class="metadata-grid"></div>
+                    <div class="full-content thinking-content"></div>
+                </div>
+        </div>
+        
+    </main>
+    
+</div>
+
+<script>
+document.getElementById('searchInput').addEventListener('input', function(e) {
+    const query = e.target.value.trim();
+    
+    if(query.length < 3) {
+        document.getElementById('resultsContainer').innerHTML = 
+            '<div class="no-results">Saisissez au moins 3 caractères</div>';
+        return;
+    }
+
+    fetch(`/api/search?q=${encodeURIComponent(query)}`)
+        .then(response => {
+            if(!response.ok) throw new Error('Erreur réseau');
+            return response.json();
+        })
+        .then(data => {
+            const resultsHtml = data.length === 0 ? 
+                '<div class="no-results">Aucun résultat trouvé</div>' :
+                data.map(item => `
+                    <div class="suggestion-card result-card" data-filename="${item.source_fichier}">
+                        <h3>${item.titre || 'Sans titre'}</h3>
+                        <div class="badges">
+                            <span class="badge high-confidence">${item.type_document || 'Non classé'}</span>
+                            <span class="badge medium-confidence">${item.date || 'Date inconnue'}</span>
+                        </div>
+                        ${item.resume ? `<div class="resume-box">${item.resume}</div>` : ''}
+                    </div>
+                `).join('');
+            
+            document.getElementById('resultsContainer').innerHTML = resultsHtml;
+            
+            document.querySelectorAll('.result-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    showDocumentPreview(card.dataset.filename);
+                });
+            });
+        })
+        .catch(error => {
+            console.error('Erreur:', error);
+            document.getElementById('resultsContainer').innerHTML = 
+                '<div class="no-results error">Erreur lors de la recherche</div>';
+        });
+});
+
+function openPdf(filename) {
+    const pdfUrl = `/pdf/${encodeURIComponent(filename)}`;
+    window.open(pdfUrl, '_blank');
+}
+
+function showDocumentPreview(filename) {
+    fetch(`/document/${encodeURIComponent(filename)}`)
+        .then(response => response.json())
+        .then(data => {
+            const preview = document.getElementById('documentPreview');
+            const title = preview.querySelector('#previewTitle');
+            const metadata = preview.querySelector('.metadata-grid');
+            const content = preview.querySelector('.full-content');
+
+            title.textContent = data.titre || 'Aperçu du document';
+            
+            metadata.innerHTML = `
+                <div class="metadata-item">
+                    <label>Type :</label>
+                    <span class="confidence-badge high-confidence">${data.type_document || '-'}</span>
+                </div>
+                <div class="metadata-item">
+                    <label>Date :</label>
+                    <span class="confidence-badge medium-confidence">${data.date || '-'}</span>
+                </div>
+                <div class="metadata-item full-width">
+                    <label>Fichier source :</label>
+                    <button class="btn-new-chat pdf-button" 
+                            onclick="openPdf('${data.source_fichier}')"
+                            ${data.pdf_exists ? '' : 'disabled'}>
+                        ${data.pdf_exists ? '📄 Ouvrir PDF' : '⚠️ PDF indisponible'}
+                    </button>
+                </div>
+                ${data.resume ? `
+                <div class="metadata-item full-width">
+                    <label>Résumé </label>
+                    <div class="resume-box thinking-content">${data.resume}</div>
+                </div>` : ''}
+            `;
+
+            preview.classList.add('active');
+        });
+}
+
+document.querySelector('.close-btn').addEventListener('click', () => {
+    document.getElementById('documentPreview').classList.remove('active');
+});
+</script>
+
