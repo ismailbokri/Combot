@@ -86,11 +86,13 @@ requirements.txt
 2. Install requirements:  
    ```bash
    pip install -r requirements.txt
+   
 3. Start Qdrant using Docker:
-docker run -p 6333:6333 -p 6334:6334 -v "${PWD}/qdrant_storage:/qdrant/storage" qdrant/qdrant
+   ```bash
+   docker run -p 6333:6333 -p 6334:6334 -v "${PWD}/qdrant_storage:/qdrant/storage" qdrant/qdrant
 4.Run the application:
    ```bash
-python app.py
+   python app.py
 
 ## 🙏 Acknowledgments
 Special thanks to Esprit School of Engineering for the opportunity to build this project and for providing access to the DGX platform, which allowed us to experiment with fine-tuning LLMs using legal texts.
