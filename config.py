@@ -13,7 +13,7 @@ from langchain_groq import ChatGroq
 
 # Charger les variables d'environnement
 load_dotenv()
-api_key = "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"
+api_key = "*****"
 
 # Chemins et paramètres
 output_dir = os.path.join('.', 'uploads')
